@@ -8,10 +8,10 @@ name: "nagy-java-mod"
 author: "You"
 
 #the fully qualified main class of the mod
-main: "example.NagyJavaMod"
+main: "nagyjavamod.NagyJavaMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A Mindustry Java mod."
 
 #the mod version
 version: 1.0
