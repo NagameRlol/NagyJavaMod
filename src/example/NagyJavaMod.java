@@ -21,8 +21,8 @@ public class NagyJavaMod extends Mod{
                 BaseDialog dialog = new BaseDialog("Neo-Dustry");
                 dialog.cont.add("Made by:").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
-                dialog.cont.image(Core.atlas.find("example-java-mod-nagpfp")).pad(20f).row();
-                dialog.cont.image(Core.atlas.find("example-java-mod-nikipfp")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("nagy-java-mod-nagpfp")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("nagy-java-mod-nikipfp")).pad(20f).row();
                 dialog.cont.button("Okay", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
