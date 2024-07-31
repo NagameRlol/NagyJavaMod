@@ -1,4 +1,4 @@
-package example;
+aapackage example;
 
 import arc.*;
 import arc.util.*;
@@ -26,7 +26,7 @@ public class ExampleJavaMod extends Mod{
                 dialog.cont.button("Okay", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
-        });d
+        });
     }
 
     @Override
