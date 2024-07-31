@@ -1,4 +1,4 @@
-package example;
+package nagyjavamod;
 
 import arc.*;
 import arc.util.*;
