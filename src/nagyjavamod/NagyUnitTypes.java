@@ -45,7 +45,7 @@ public class NagyUnitTypes {
             health = 400;
             weapons.add(
                 new Weapon(""){{
-                reload = 30f;
+                reload = 15f;
                 x = 0f;
                 y = 3f;
                 top = false;
@@ -53,19 +53,6 @@ public class NagyUnitTypes {
                 bullet = new BasicBulletType(5f, 20){{
                     width = 9f;
                     height = 12f;
-                    lifetime = 60f;
-                    }};
-                }},
-                new Weapon(""){{
-                reload = 2f;
-                x = 4f;
-                y = 0f;
-                top = false;
-                mirror = true;
-                inaccuracy = 0;
-                bullet = new BasicBulletType(8f, 1){{
-                    width = 5f;
-                    height = 8f;
                     lifetime = 60f;
                     }};
                 }}
