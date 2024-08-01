@@ -44,13 +44,13 @@ public class NagyUnitTypes {
             engineOffset = 5f;
             health = 400;
             weapons.add(new Weapon(""){{
-                reload = 5f;
+                reload = 15f;
                 x = 0f;
                 y = 3f;
                 top = false;
                 inaccuracy = 3;
                 ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(5f, 10){{
+                bullet = new BasicBulletType(5f, 20){{
                     width = 9f;
                     height = 12f;
                     lifetime = 60f;
