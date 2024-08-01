@@ -13,7 +13,7 @@ public class NagyUnitTypes {
                 x = 0f;
                 y = 5f;
                 top = false;
-                inacuraccy = 3
+                inaccuracy = 3;
                 ejectEffect = Fx.casing1;
                 bullet = new BasicBulletType(5f, 10){{
                     width = 9f;
