@@ -143,7 +143,7 @@ public class NagyUnitTypes {
                     lifetime = 70f;
                     fragBullets = 6;
                     frag = true;
-                    }}
+                    }};
                 }}
             );
         }};
