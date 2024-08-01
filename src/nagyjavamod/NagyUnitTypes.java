@@ -142,7 +142,6 @@ public class NagyUnitTypes {
                     height = 12f;
                     lifetime = 70f;
                     fragBullets = 6;
-                    frag = true;
                     }};
                 }}
             );
