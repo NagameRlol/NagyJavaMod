@@ -41,7 +41,6 @@ public class NagyUnitTypes {
             accel = 0.2f;
             drag = 0.2f;
             hitSize = 10f;
-            flying = true;
             engineSize = 2.5f;
             engineOffset = 5f;
             health = 400;
