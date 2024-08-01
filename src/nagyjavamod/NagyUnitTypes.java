@@ -1,6 +1,6 @@
 package nagyjavamod;
 
-public class NagyUnitTypes{
+public class NagyUnitTypes {
     public static UnitType shitass;
 
     public static void load(){
