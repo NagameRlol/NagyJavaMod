@@ -35,11 +35,13 @@ public class NagyUnitTypes {
     public static void load(){
         trooper = new UnitType("trooper"){{
             constructor = UnitEntity::create;
-            speed = 0.7f;
+            speed = 2f;
+            accel = 0.4;
+            drag = 0.4;
             hitSize = 10f;
             flying = true;
-            engineSize = 3;
-            engineOffset = 4;
+            engineSize = 2.5;
+            engineOffset = 5;
             health = 400;
             weapons.add(new Weapon(""){{
                 reload = 5f;
