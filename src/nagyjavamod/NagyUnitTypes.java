@@ -43,19 +43,33 @@ public class NagyUnitTypes {
             engineSize = 2.5f;
             engineOffset = 5f;
             health = 400;
-            weapons.add(new Weapon(""){{
-                reload = 15f;
+            weapons.add(
+                new Weapon(""){{
+                reload = 30f;
                 x = 0f;
                 y = 3f;
                 top = false;
-                inaccuracy = 3;
-                ejectEffect = Fx.casing1;
+                inaccuracy = 0;
                 bullet = new BasicBulletType(5f, 20){{
                     width = 9f;
                     height = 12f;
                     lifetime = 60f;
-                }};
-            }});
+                    }};
+                }},
+                new Weapon(""){{
+                reload = 2f;
+                x = 4f;
+                y = 0f;
+                top = false;
+                mirror = true;
+                inaccuracy = 0;
+                bullet = new BasicBulletType(8f, 1){{
+                    width = 5f;
+                    height = 8f;
+                    lifetime = 60f;
+                    }};
+                }}
+            );
         }};
     }
 }
