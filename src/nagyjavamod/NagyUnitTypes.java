@@ -34,7 +34,7 @@ public class NagyUnitTypes {
 
     public static void load(){
         trooper = new UnitType("trooper"){{
-            constructor = UnitEntity::create;
+            constructor = ElevationMoveUnit::create;
             hovering = true;
             shadowElevation = 0.1f;
             lowAltitude = true;
