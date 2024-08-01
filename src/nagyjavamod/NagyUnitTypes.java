@@ -143,14 +143,8 @@ public class NagyUnitTypes {
                     lifetime = 70f;
                     fragBullets = 6;
                     frag = true;
-                    fragBullet = new BasicBulletType(7f, 5){{
-                        width = 5f;
-                        height = 7;
-                        lifetime = 40;
-                        }};
-                       }}
-                     }};
                     }}
+                }}
             );
         }};
     }
