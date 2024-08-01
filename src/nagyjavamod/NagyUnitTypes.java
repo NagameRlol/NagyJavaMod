@@ -59,7 +59,7 @@ public class NagyUnitTypes {
                 }},
                 new HoverPart(){{
                     x = 2f;
-                    y = -3f;
+                    y = 3f;
                     mirror = true;
                     radius = 5f;
                     phase = 90f;
