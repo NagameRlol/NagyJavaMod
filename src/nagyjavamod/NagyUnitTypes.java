@@ -39,8 +39,8 @@ public class NagyUnitTypes {
             shadowElevation = -3f;
             lowAltitude = true;
             speed = 1.75f;
-            accel = 0.2f;
-            drag = 0.2f;
+            accel = 0.09f;
+            drag = 0.07f;
             hitSize = 8;
             engineSize = 2.5f;
             engineOffset = 5f;
@@ -81,6 +81,63 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 bullet = new BasicBulletType(5f, 20){{
+                    width = 9f;
+                    height = 12f;
+                    lifetime = 60f;
+                    }};
+                }}
+            );
+        }};
+        
+        sergeant = new UnitType("sergeant"){{
+            constructor = ElevationMoveUnit::create;
+            hovering = true;
+            shadowElevation = -3f;
+            lowAltitude = true;
+            speed = 1.5f;
+            accel = 0.09f;
+            drag = 0.07f;
+            hitSize = 11;
+            engineSize = 3f;
+            engineOffset = 4f;
+            health = 700;
+            flying = false;
+            itemCapacity = 0;
+            useEngineElevation = false;
+            researchCostMultiplier = 0f;
+            
+            parts.add(
+                new HoverPart(){{
+                    x = 5f;
+                    y = -4f;
+                    mirror = true;
+                    radius = 6f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("ffa566");
+                }},
+                new HoverPart(){{
+                    x = 4f;
+                    y = -1f;
+                    mirror = true;
+                    radius = 6f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("ffa566");
+                }}
+            );
+    
+            weapons.add(
+                new Weapon("sergeant-weapon"){{
+                reload = 10f;
+                alternate = true;
+                x = 0f;
+                y = 3f;
+                top = false;
+                inaccuracy = 0;
+                bullet = new BasicBulletType(5f, 17){{
                     width = 9f;
                     height = 12f;
                     lifetime = 60f;
