@@ -58,8 +58,8 @@ public class NagyUnitTypes {
                     color = Color.valueOf("ffa566");
                 }},
                 new HoverPart(){{
-                    x = 2f;
-                    y = 2f;
+                    x = 3f;
+                    y = 1f;
                     mirror = true;
                     radius = 5f;
                     phase = 90f;
