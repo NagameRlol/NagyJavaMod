@@ -34,6 +34,7 @@ public class NagyUnitTypes {
 
     public static void load(){
         trooper = new UnitType("trooper"){{
+            constructor = UnitEntity::create;
             speed = 0.7f;
             hitSize = 10f;
             health = 400;
