@@ -44,6 +44,7 @@ public class NagyUnitTypes {
             engineSize = 2.5f;
             engineOffset = 5f;
             health = 400;
+            flying = false;
             itemCapacity = 0;
             useEngineElevation = false;
             researchCostMultiplier = 0f;
