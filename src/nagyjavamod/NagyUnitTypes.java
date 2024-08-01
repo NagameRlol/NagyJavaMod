@@ -38,8 +38,8 @@ public class NagyUnitTypes {
             hovering = true;
             shadowElevation = 0.1f;
             speed = 2f;
-            accel = 0.1f;
-            drag = 0.1f;
+            accel = 0.2f;
+            drag = 0.2f;
             hitSize = 10f;
             flying = true;
             engineSize = 2.5f;
