@@ -8,6 +8,7 @@ import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
+import mindustry.unitTypes.*;
 
 public class NagyJavaMod extends Mod{
 
