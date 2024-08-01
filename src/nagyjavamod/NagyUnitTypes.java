@@ -37,6 +37,9 @@ public class NagyUnitTypes {
             constructor = UnitEntity::create;
             speed = 0.7f;
             hitSize = 10f;
+            flying = true;
+            engineSize = 3;
+            engineOffset = 4;
             health = 400;
             weapons.add(new Weapon(""){{
                 reload = 5f;
