@@ -133,9 +133,9 @@ public class NagyUnitTypes {
                 new Weapon("sergeant-weapon"){{
                 reload = 10f;
                 alternate = true;
-                x = 0f;
+                x = 4f;
                 y = 3f;
-                top = false;
+                top = true;
                 inaccuracy = 0;
                 bullet = new BasicBulletType(4f, 17){{
                     width = 9f;
