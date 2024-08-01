@@ -4,7 +4,6 @@ import arc.*;
 import arc.util.*;
 import mindustry.*;
 import mindustry.content.*;
-import mindustry.content.UnitTypes;
 import mindustry.game.EventType.*;
 import mindustry.gen.*;
 import mindustry.mod.*;
