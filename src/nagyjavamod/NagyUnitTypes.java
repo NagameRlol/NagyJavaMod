@@ -34,7 +34,7 @@ public class NagyUnitTypes {
     public static UnitType trooper;
 
     public static void load(){
-        trooper = new NagyUnitType("trooper"){{
+        trooper = new UnitType("trooper"){{
             speed = 0.7f;
             hitSize = 10f;
             health = 400;
