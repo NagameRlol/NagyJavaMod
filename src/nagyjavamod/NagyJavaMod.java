@@ -13,7 +13,7 @@ public class NagyJavaMod extends Mod{
 
     public NagyJavaMod(){
         Log.info("Loaded NagyJavaMod constructor.");
-
+        NagyUnitTypes.load()
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
