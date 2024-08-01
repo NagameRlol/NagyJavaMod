@@ -30,7 +30,7 @@ import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
 
 public class NagyUnitTypes {
-    public static UnitType trooper;
+    public static UnitType trooper, sergeant; //serpulo hovertanks
 
     public static void load(){
         trooper = new UnitType("trooper"){{
