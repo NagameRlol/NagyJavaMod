@@ -45,7 +45,10 @@ public class NagyUnitTypes {
             engineSize = 2.5f;
             engineOffset = 5f;
             health = 400;
-
+            itemCapacity = 0;
+            useEngineElevation = false;
+            researchCostMultiplier = 0f;
+            
             parts.add(
                 new HoverPart(){{
                     x = 4f;
