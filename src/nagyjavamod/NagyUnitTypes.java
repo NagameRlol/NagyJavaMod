@@ -33,7 +33,7 @@ public class NagyUnitTypes {
     public static UnitType trooper;
 
     public static void load(){
-        trooper = new ErekirUnitType("trooper"){{
+        trooper = new UnitType("trooper"){{
             constructor = UnitEntity::create;
             hovering = true;
             shadowElevation = 0.1f;
