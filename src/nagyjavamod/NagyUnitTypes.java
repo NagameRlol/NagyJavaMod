@@ -36,12 +36,12 @@ public class NagyUnitTypes {
         trooper = new UnitType("trooper"){{
             constructor = ElevationMoveUnit::create;
             hovering = true;
-            shadowElevation = 0.1f;
+            shadowElevation = 1f;
             lowAltitude = true;
             speed = 1.75f;
             accel = 0.2f;
             drag = 0.2f;
-            hitSize = 10f;
+            hitSize = 8;
             engineSize = 2.5f;
             engineOffset = 5f;
             health = 400;
