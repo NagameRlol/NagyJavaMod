@@ -137,12 +137,20 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
-                bullet = new BasicBulletType(5f, 17){{
+                bullet = new BasicBulletType(4f, 17){{
                     width = 9f;
                     height = 12f;
-                    lifetime = 60f;
-                    }};
-                }}
+                    lifetime = 70f;
+                    fragBullets = 6;
+                    frag = true;
+                    fragBullet = bullet = new BasicBulletType(7f, 5){{
+                        width = 5f;
+                        height = 7;
+                        lifetime = 40;
+                        }};
+                       }}
+                     }};
+                    }}
             );
         }};
     }
