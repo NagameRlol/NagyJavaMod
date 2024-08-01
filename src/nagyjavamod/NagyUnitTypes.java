@@ -37,6 +37,7 @@ public class NagyUnitTypes {
             constructor = UnitEntity::create;
             hovering = true;
             shadowElevation = 0.1f;
+            lowAltitude = true;
             speed = 1.75f;
             accel = 0.2f;
             drag = 0.2f;
