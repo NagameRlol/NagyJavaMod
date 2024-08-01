@@ -1,3 +1,5 @@
+package nagyjavamod;
+
 public class NagyUnitTypes{
     public static UnitType shitass;
 
