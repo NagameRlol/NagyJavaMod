@@ -46,19 +46,29 @@ public class NagyUnitTypes {
             engineOffset = 5f;
             health = 400;
 
-            for(float f : new float[]{-3f, 3f}){
-                parts.add(new HoverPart(){{
-                    x = 3.9f;
-                    y = f;
+            parts.add(
+                new HoverPart(){{
+                    x = 4f;
+                    y = -3;
                     mirror = true;
                     radius = 5f;
                     phase = 90f;
                     stroke = 2f;
                     layerOffset = -0.001f;
                     color = Color.valueOf("ffa566");
-                }});
-            }
-            
+                }},
+                new HoverPart(){{
+                    x = 2f;
+                    y = -3;
+                    mirror = true;
+                    radius = 5f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("ffa566");
+                }}
+            );
+    
             weapons.add(
                 new Weapon(""){{
                 reload = 15f;
