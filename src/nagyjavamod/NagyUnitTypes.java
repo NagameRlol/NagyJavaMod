@@ -137,7 +137,7 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = true;
                 inaccuracy = 0;
-                bullet = new BasicBulletType(4f, 17){{
+                bullet = new BasicBulletType(4f, 15){{
                     width = 9f;
                     height = 12f;
                     lifetime = 70f;
