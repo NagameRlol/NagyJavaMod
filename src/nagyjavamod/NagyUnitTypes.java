@@ -175,6 +175,10 @@ public class NagyUnitTypes {
                     width = 1f;
                     height = 20;
                     lifetime = 40f;
+                    frontColor = NagyPal.redLaser;
+                    trailColor = NagyPal.redLaser;
+                    trailLength = 3;
+                    trailWidth = 1;
                     }};
                 }}
             );
