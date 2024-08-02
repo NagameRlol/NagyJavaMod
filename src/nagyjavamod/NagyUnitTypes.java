@@ -28,9 +28,13 @@ import mindustry.type.ammo.*;
 import mindustry.type.unit.*;
 import mindustry.type.weapons.*;
 import mindustry.world.meta.*;
+import nagyjavamod.*;
 
 public class NagyUnitTypes {
-    public static UnitType trooper, sergeant; //serpulo hovertanks
+    public static UnitType
+    trooper, sergeant, //serpulo hovertanks
+    inflamation //red flying
+    ; 
 
     public static void load(){
         trooper = new UnitType("trooper"){{
