@@ -130,7 +130,7 @@ public class NagyUnitTypes {
             );
     
             weapons.add(
-                new Weapon("sergeant-weapon"){{
+                new Weapon("nagyjavamod-sergeant-weapon"){{
                 reload = 10f;
                 alternate = true;
                 x = 4f;
