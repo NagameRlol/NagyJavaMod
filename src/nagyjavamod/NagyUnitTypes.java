@@ -148,5 +148,59 @@ public class NagyUnitTypes {
                 }}
             );
         }};
+
+        trooper = new UnitType("inflamation"){{
+            constructor = UnitEntity::create;
+            speed = 1.75f;
+            accel = 0.09f;
+            drag = 0.07f;
+            hitSize = 8;
+            engineSize = 2.5f;
+            engineOffset = 5f;
+            health = 400;
+            flying = true;
+            itemCapacity = 0;
+            useEngineElevation = false;
+            researchCostMultiplier = 0f;
+            
+            parts.add(
+                new HoverPart(){{
+                    x = 4f;
+                    y = -3f;
+                    mirror = true;
+                    radius = 5f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("ffa566");
+                }},
+                new HoverPart(){{
+                    x = 3f;
+                    y = 1f;
+                    mirror = true;
+                    radius = 5f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("ffa566");
+                }}
+            );
+    
+            weapons.add(
+                new Weapon(""){{
+                reload = 15f;
+                x = 0f;
+                y = 3f;
+                top = false;
+                inaccuracy = 0;
+                bullet = new RicochetBulletType(5f, 20f, "bullet"){{
+                    width = 9f;
+                    height = 12f;
+                    lifetime = 60f;
+                    }};
+                }}
+            );
+        }};
+        
     }
 }
