@@ -13,6 +13,8 @@ import mindustry.gen.Bullet;
 import mindustry.gen.Hitboxc;
 import mindustry.gen.Unit;
 
+// code from an other mod :|
+
 public class RicochetBulletType extends BasicBulletType {
     //how much of its velocity is kept on bounce
     public float bounciness = 1;
@@ -20,7 +22,7 @@ public class RicochetBulletType extends BasicBulletType {
     public int bounceCap = -1;
     public boolean bounceUnits, bounceBuildings;
     //Effect displayed on bounce
-    public Effect bounceEffect = Fx.nonw;
+    public Effect bounceEffect = Fx.none;
 
     //Whether the bullet can bounce multiple times on the same entity
     public boolean bounceSame = true;
