@@ -48,7 +48,6 @@ public class NagyUnitTypes {
             flying = false;
             itemCapacity = 0;
             useEngineElevation = false;
-            researchCostMultiplier = 0f;
             
             parts.add(
                 new HoverPart(){{
@@ -104,30 +103,6 @@ public class NagyUnitTypes {
             flying = false;
             itemCapacity = 0;
             useEngineElevation = false;
-            researchCostMultiplier = 0f;
-            
-            parts.add(
-                new HoverPart(){{
-                    x = 5f;
-                    y = -5f;
-                    mirror = true;
-                    radius = 8;
-                    phase = 90f;
-                    stroke = 2f;
-                    layerOffset = -0.001f;
-                    color = Color.valueOf("ffa566");
-                }},
-                new HoverPart(){{
-                    x = 5f;
-                    y = -2f;
-                    mirror = true;
-                    radius = 8;
-                    phase = 90f;
-                    stroke = 2f;
-                    layerOffset = -0.001f;
-                    color = Color.valueOf("ffa566");
-                }}
-            );
     
             weapons.add(
                 new Weapon("nagyjavamod-sergeant-weapon"){{
@@ -159,9 +134,6 @@ public class NagyUnitTypes {
             engineOffset = 5f;
             health = 400;
             flying = true;
-            itemCapacity = 0;
-            useEngineElevation = false;
-            researchCostMultiplier = 0f;
             
             parts.add(
                 new HoverPart(){{
