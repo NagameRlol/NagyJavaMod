@@ -1,4 +1,4 @@
-package main.entities.bullet;
+package nagyjavamod;
 
 import arc.math.geom.Geometry;
 import arc.math.geom.Intersector;
