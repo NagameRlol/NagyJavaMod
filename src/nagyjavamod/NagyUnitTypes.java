@@ -159,18 +159,19 @@ public class NagyUnitTypes {
             flying = true;
             trailLength = 10f;
             circleTarget = true;
-            outlineColor = NagyPal.basaltOutlineColor;
+            outlineColor = NagyPal.basaltOutline;
+            
             weapons.add(
                 new Weapon(""){{
-                reload = 15f;
+                reload = 10f;
                 x = 0f;
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
-                bullet = new RicochetBulletType(5f, 20f, "bullet"){{
-                    width = 9f;
-                    height = 12f;
-                    lifetime = 60f;
+                bullet = new BasicBulletType(6f, 20f, "laser"){{
+                    width = 1f;
+                    height = 20;
+                    lifetime = 40f;
                     }};
                 }}
             );
