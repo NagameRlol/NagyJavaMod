@@ -171,6 +171,7 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
+                shootSound = sfx.bolt
                 bullet = new BasicBulletType(6f, 20f, "laser"){{
                     width = 1f;
                     height = 20;
