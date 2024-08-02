@@ -20,7 +20,7 @@ public class RicochetBulletType extends BasicBulletType {
     public int bounceCap = -1;
     public boolean bounceUnits, bounceBuildings;
     //Effect displayed on bounce
-    public Effect bounceEffect = Fx.plasticExplosion;
+    public Effect bounceEffect = Fx.nonw;
 
     //Whether the bullet can bounce multiple times on the same entity
     public boolean bounceSame = true;
