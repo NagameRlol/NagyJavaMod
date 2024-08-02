@@ -153,10 +153,11 @@ public class NagyUnitTypes {
         inflamation = new UnitType("inflamation"){{
             constructor = UnitEntity::create;
             speed = 4f;
+            rotateSpeed = 10f;
             accel = 0.1f;
             drag = 0.1f;
-            engineSize = 2f;
-            engineOffset = 6f;
+            engineSize = 4f;
+            engineOffset = 7f;
             health = 300;
             armor = 3f;
             flying = true;
