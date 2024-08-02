@@ -5,6 +5,6 @@ import arc.graphics.*;
 public class NagyPal {
   
     public static Color
-    basaltOutline = Color.valueOf("ffffff");
+    basaltOutline = Color.valueOf("000000");
 
 }
