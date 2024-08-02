@@ -159,7 +159,7 @@ public class NagyUnitTypes {
             flying = true;
             trailLength = 10f;
             circleTarget = true;
-            outlineColor = nagyPal.basaltOutlineColor;
+            outlineColor = NagyPal.basaltOutlineColor;
             weapons.add(
                 new Weapon(""){{
                 reload = 15f;
