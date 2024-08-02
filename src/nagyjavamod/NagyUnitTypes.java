@@ -179,9 +179,7 @@ public class NagyUnitTypes {
                     trailColor = NagyPal.redLaser;
                     trailLength = 3;
                     trailWidth = 1;
-                    pierce = true;
-                    pierceBuildings = true;
-                    
+                    pierce = true;   
                     }};
                 }}
             );
