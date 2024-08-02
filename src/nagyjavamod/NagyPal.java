@@ -2,7 +2,7 @@ package nagyjavamod;
 
 import arc.graphics.*;
 
-public class Pal {
+public class NagyPal {
   
     public static Color
     basaltOutline = Color.valueOf("ffffff");
