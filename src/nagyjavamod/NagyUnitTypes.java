@@ -103,38 +103,7 @@ public class NagyUnitTypes {
             flying = false;
             itemCapacity = 0;
             useEngineElevation = false;
-    
-            weapons.add(
-                new Weapon("nagyjavamod-sergeant-weapon"){{
-                reload = 10f;
-                alternate = true;
-                x = 3f;
-                y = 5f;
-                top = true;
-                rotate = true;
-                rotationLimit = 40;
-                inaccuracy = 0;
-                bullet = new RicochetBulletType(4f, 15f, "bullet"){{
-                    width = 9f;
-                    height = 12f;
-                    lifetime = 70f;
-                    fragBullets = 6;
-                    }};
-                }}
-            );
-        }};
 
-        trooper = new UnitType("inflamation"){{
-            constructor = UnitEntity::create;
-            speed = 1.75f;
-            accel = 0.09f;
-            drag = 0.07f;
-            hitSize = 8;
-            engineSize = 2.5f;
-            engineOffset = 5f;
-            health = 400;
-            flying = true;
-            
             parts.add(
                 new HoverPart(){{
                     x = 4f;
@@ -157,7 +126,40 @@ public class NagyUnitTypes {
                     color = Color.valueOf("ffa566");
                 }}
             );
-    
+            
+            weapons.add(
+                new Weapon("nagyjavamod-sergeant-weapon"){{
+                reload = 10f;
+                alternate = true;
+                x = 3f;
+                y = 5f;
+                top = true;
+                rotate = true;
+                rotationLimit = 40;
+                inaccuracy = 0;
+                bullet = new RicochetBulletType(4f, 15f, "bullet"){{
+                    width = 9f;
+                    height = 12f;
+                    lifetime = 70f;
+                    fragBullets = 6;
+                    }};
+                }}
+            );
+        }};
+
+        inflamation = new UnitType("inflamation"){{
+            constructor = UnitEntity::create;
+            speed = 4f;
+            accel = 0.1f;
+            drag = 0.1f;
+            engineSize = 2f;
+            engineOffset = 6f;
+            health = 300;
+            armor = 3f;
+            flying = true;
+            trailLength = 10f;
+            circleTarget = true;
+            outlineColor = nagyPal.basaltOutlineColor;
             weapons.add(
                 new Weapon(""){{
                 reload = 15f;
