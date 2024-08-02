@@ -133,9 +133,11 @@ public class NagyUnitTypes {
                 new Weapon("nagyjavamod-sergeant-weapon"){{
                 reload = 10f;
                 alternate = true;
-                x = 4f;
-                y = 3f;
+                x = 3f;
+                y = 5f;
                 top = true;
+                rotate = true;
+                rotationLimit = 40;
                 inaccuracy = 0;
                 bullet = new RicochetBulletType(4f, 15f, "bullet"){{
                     width = 9f;
