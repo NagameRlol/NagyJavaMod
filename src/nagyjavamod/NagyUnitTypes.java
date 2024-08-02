@@ -111,7 +111,7 @@ public class NagyUnitTypes {
                     x = 5f;
                     y = -5f;
                     mirror = true;
-                    radius = 10f;
+                    radius = 8;
                     phase = 90f;
                     stroke = 2f;
                     layerOffset = -0.001f;
@@ -119,9 +119,9 @@ public class NagyUnitTypes {
                 }},
                 new HoverPart(){{
                     x = 5f;
-                    y = 5f;
+                    y = -2f;
                     mirror = true;
-                    radius = 10f;
+                    radius = 8;
                     phase = 90f;
                     stroke = 2f;
                     layerOffset = -0.001f;
