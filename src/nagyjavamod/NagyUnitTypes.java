@@ -80,7 +80,7 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
-                bullet = new RicochetBulletType(5f, 20f){{
+                bullet = new RicochetBulletType(5f, 20f, "bullet"){{
                     width = 9f;
                     height = 12f;
                     lifetime = 60f;
@@ -137,7 +137,7 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = true;
                 inaccuracy = 0;
-                bullet = new RicochetBulletType(4f, 15f){{
+                bullet = new RicochetBulletType(4f, 15f, "bullet"){{
                     width = 9f;
                     height = 12f;
                     lifetime = 70f;
