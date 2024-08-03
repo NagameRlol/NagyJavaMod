@@ -156,8 +156,8 @@ public class NagyUnitTypes {
             rotateSpeed = 10f;
             accel = 0.1f;
             drag = 0.1f;
-            engineSize = 4f;
-            engineOffset = 7f;
+            engineSize = 3f;
+            engineOffset = 6f;
             health = 300;
             armor = 3f;
             flying = true;
