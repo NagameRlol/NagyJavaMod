@@ -31,9 +31,9 @@ public class NagyJavaMod extends Mod{
     @Override
     public void loadContent(){
         Log.info("Loading some example content.");
+        NagyItems.load();
         NagyUnitTypes.load();
         NagyBlocks.load();
-        NagyItems.load();
     }
 
 }
