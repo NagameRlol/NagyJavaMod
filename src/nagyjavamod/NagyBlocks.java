@@ -50,7 +50,7 @@ public class NagyBlocks {
             ambientSoundVolume = 0.03f;
             generateEffect = Fx.generatespark;
 
-            consumeItem(new electricCyst, 1);
+            consumeItem(new NagyItems.electricCyst, 1);
 
             drawer = new DrawMulti(new DrawDefault(), new DrawWarmupRegion());
         }};
