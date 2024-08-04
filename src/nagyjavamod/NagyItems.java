@@ -11,10 +11,10 @@ public class NagyItems{
         public static void load(){
         electricCyst = new Item("electric-cyst", Color.valueOf("fdb480")){{
             hardness = 1;
-        }},
+        }};
         basalt = new Item("basalt", Color.valueOf("606070")){{
             hardness = 1;
-        }},
+        }};
         zinc = new Item("zinc", Color.valueOf("b4b6c2")){{
             hardness = 1;
         }};
