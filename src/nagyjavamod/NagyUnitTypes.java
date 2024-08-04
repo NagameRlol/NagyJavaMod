@@ -161,7 +161,7 @@ public class NagyUnitTypes {
             health = 300;
             armor = 3f;
             flying = true;
-            trailLength = 10;
+            trailLength = 2;
             circleTarget = true;
             outlineColor = NagyPal.basaltOutline;
             
