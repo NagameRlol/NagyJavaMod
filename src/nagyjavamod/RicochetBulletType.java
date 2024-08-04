@@ -42,7 +42,6 @@ public class RicochetBulletType extends BasicBulletType {
         this.damage = damage;
         this.pierceBuilding = this.pierce = this.bounceBuildings = this.bounceUnits = true;
         this.trailWidth = width * 0.38f;
-        this.shrinkX = 0.8f;
     }
 
     @Override
