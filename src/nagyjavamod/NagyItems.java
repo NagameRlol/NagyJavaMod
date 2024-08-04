@@ -1,4 +1,4 @@
-package mindustry.content;
+package nagyjavamod;
 
 import arc.graphics.*;
 import arc.struct.*;
