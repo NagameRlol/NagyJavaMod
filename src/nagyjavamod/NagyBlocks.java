@@ -43,15 +43,14 @@ public class NagyBlocks {
         
         electricExtractor = new ConsumeGenerator("electric-extractor"){{
             requirements(Category.power, with(NagyItems.basalt, 30, NagyItems.zinc, 20));
-            powerProduction = 3f;
-            itemDuration = 160f;
+            powerProduction = 2f;
+            itemDuration = 200f;
 
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.03f;
             generateEffect = Fx.generatespark;
 
-            consume(new ConsumeItemFlammable());
-            consume(new ConsumeItemExplode());
+            consumeItem(new electricCyst, 1);
 
             drawer = new DrawMulti(new DrawDefault(), new DrawWarmupRegion());
         }};

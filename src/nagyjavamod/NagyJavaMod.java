@@ -32,6 +32,7 @@ public class NagyJavaMod extends Mod{
     public void loadContent(){
         Log.info("Loading some example content.");
         NagyUnitTypes.load();
+        NagyBlocks.load();
     }
 
 }
