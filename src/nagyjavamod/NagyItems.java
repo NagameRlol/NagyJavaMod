@@ -4,7 +4,7 @@ import arc.graphics.*;
 import arc.struct.*;
 import mindustry.type.*;
 
-public class NagyItems{
+public class NagyItems {
     public static Item
     electricCyst, basalt, zinc;
 
