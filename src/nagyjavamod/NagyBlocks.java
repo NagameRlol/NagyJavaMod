@@ -37,6 +37,8 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 public class NagyBlocks {
+    public static Block electricExtractor;
+    
     public static void load(){
     }
 }
