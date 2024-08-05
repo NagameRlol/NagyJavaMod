@@ -50,8 +50,9 @@ public class NagyBlocks {
             powerProduction = 2f;
             itemDuration = 200f;
             size = 2;
+            drawer = new DrawMulti(new DrawDefault(), new DrawFlame(Color.valueOf("fdb480")));
             ambientSound = Sounds.smelter;
-            ambientSoundVolume = 0.03f;
+            ambientSoundVolume = 0.07f;
             generateEffect = Fx.generatespark;
 
             consumeItem(NagyItems.electricCyst, 1);
