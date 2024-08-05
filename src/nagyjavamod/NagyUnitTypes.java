@@ -32,7 +32,7 @@ import mindustry.world.meta.*;
 public class NagyUnitTypes {
     public static UnitType
     trooper, sergeant, //serpulo hovertanks
-    inflamation //red flying
+    inflamation, forestfire //red flying
     ; 
 
     public static void load(){
@@ -202,7 +202,7 @@ public class NagyUnitTypes {
             outlineColor = NagyPal.basaltOutline;
 
             setEnginesMirror(
-            new UnitEngine(-4f, -7f, 2f, 90f),
+            new UnitEngine(-4f, -7f, 2f, 90f);
             );
             
             weapons.add(
