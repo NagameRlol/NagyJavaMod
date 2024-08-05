@@ -202,7 +202,7 @@ public class NagyUnitTypes {
             outlineColor = NagyPal.basaltOutline;
 
             setEnginesMirror(
-            new UnitEngine(-4f, -7f, 2f, 90f)
+            new UnitEngine(-4f, -7f, 2f, -90f)
             );
             
             weapons.add(
