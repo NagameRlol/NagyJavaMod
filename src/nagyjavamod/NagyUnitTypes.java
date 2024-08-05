@@ -154,14 +154,14 @@ public class NagyUnitTypes {
             constructor = UnitEntity::create;
             speed = 4f;
             rotateSpeed = 10f;
-            accel = 0.1f;
+            accel = 0.05f;
             drag = 0.1f;
             engineSize = 3f;
             engineOffset = 6f;
             health = 300;
             armor = 3f;
             flying = true;
-            trailLength = 2;
+            trailLength = 4;
             circleTarget = true;
             outlineColor = NagyPal.basaltOutline;
             
@@ -171,6 +171,47 @@ public class NagyUnitTypes {
                 x = 0f;
                 y = 3f;
                 top = false;
+                inaccuracy = 0;
+                shootSound = Sounds.bolt;
+                bullet = new BasicBulletType(6f, 20f, "laser"){{
+                    width = 1f;
+                    height = 20;
+                    lifetime = 40f;
+                    frontColor = NagyPal.redLaser;
+                    trailColor = NagyPal.redLaser;
+                    trailLength = 3;
+                    trailWidth = 1;
+                    pierce = true;   
+                    }};
+                }}
+            );
+        }};
+
+        forestfire = new UnitType("forestfire"){{
+            constructor = UnitEntity::create;
+            speed = 3f;
+            rotateSpeed = 10f;
+            accel = 0.05f;
+            drag = 0.1f;
+            engineSize = 1f;
+            engineOffset = 0f;
+            health = 600;
+            armor = 6f;
+            flying = true;
+            circleTarget = true;
+            outlineColor = NagyPal.basaltOutline;
+
+            setEnginesMirror(
+            new UnitEngine(-4f, -7f, 2f, 90f),
+            );
+            
+            weapons.add(
+                new Weapon(""){{
+                reload = 8;
+                x = 6f;
+                y = 0f;
+                top = false;
+                alternate = true;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
                 bullet = new BasicBulletType(6f, 20f, "laser"){{
