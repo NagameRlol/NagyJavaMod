@@ -56,7 +56,7 @@ public class NagyBlocks {
 
             consumeItem(NagyItems.electricCyst, 1);
 
-            drawer = new DrawMulti(new DrawDefault(), new DrawWarmupRegion());
+            drawer = new DrawMulti(new DrawDefault());
         }};
         
     }
