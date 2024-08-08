@@ -215,7 +215,7 @@ public class NagyUnitTypes {
             );
 
             setEnginesMirror(
-            new UnitEngine(8f, -13f, 4f, -70f)
+            new UnitEngine(9f, -13f, 3f, -60)
             );
             
         }};
