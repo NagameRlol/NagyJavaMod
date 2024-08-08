@@ -31,7 +31,8 @@ import mindustry.world.meta.*;
 
 public class NagyUnitTypes {
     public static UnitType
-    trooper, sergeant, //serpulo hovertanks
+    trooper, sergeant, //serpulo assault hovertanks
+    whosdeez, //serpulo support hovertanks
     inflamation, forestfire //red flying
     ; 
 
@@ -150,12 +151,13 @@ public class NagyUnitTypes {
             );
         }};
 
-        trooper = new UnitType("whosdeez"){{
+        whosdeez = new UnitType("whosdeez"){{
             constructor = ElevationMoveUnit::create;
             hovering = true;
             shadowElevation = -3f;
             lowAltitude = true;
-            speed = 4f;
+            rotateSpeed = 3f;
+            speed = 2f;
             accel = 0.05f;
             drag = 0.05f;
             hitSize = 20;
@@ -169,8 +171,8 @@ public class NagyUnitTypes {
             
             parts.add(
                 new HoverPart(){{
-                    x = 30f;
-                    y = 11f;
+                    x = 10f;
+                    y = 6f;
                     mirror = true;
                     radius = 7f;
                     phase = 90f;
