@@ -171,8 +171,18 @@ public class NagyUnitTypes {
             
             parts.add(
                 new HoverPart(){{
-                    x = 12f;
-                    y = 7f;
+                    x = 14f;
+                    y = 9f;
+                    mirror = true;
+                    radius = 7f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("84f491");
+                }},
+                new HoverPart(){{
+                    x = 15f;
+                    y = 3f;
                     mirror = true;
                     radius = 7f;
                     phase = 90f;
@@ -182,7 +192,7 @@ public class NagyUnitTypes {
                 }},
                 new HoverPart(){{
                     x = 14f;
-                    y = 2f;
+                    y = -6f;
                     mirror = true;
                     radius = 7f;
                     phase = 90f;
