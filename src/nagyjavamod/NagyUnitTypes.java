@@ -40,7 +40,6 @@ public class NagyUnitTypes {
         trooper = new UnitType("trooper"){{
             constructor = ElevationMoveUnit::create;
             hovering = true;
-            shadowElevation = -3f;
             lowAltitude = true;
             speed = 1.75f;
             accel = 0.09f;
@@ -95,7 +94,6 @@ public class NagyUnitTypes {
         sergeant = new UnitType("sergeant"){{
             constructor = ElevationMoveUnit::create;
             hovering = true;
-            shadowElevation = -3f;
             lowAltitude = true;
             speed = 1.5f;
             accel = 0.09f;
@@ -154,7 +152,6 @@ public class NagyUnitTypes {
         whosdeez = new UnitType("whosdeez"){{
             constructor = ElevationMoveUnit::create;
             hovering = true;
-            shadowElevation = -3f;
             lowAltitude = true;
             rotateSpeed = 3f;
             speed = 2f;
@@ -200,11 +197,6 @@ public class NagyUnitTypes {
                     layerOffset = -0.001f;
                     color = Color.valueOf("84f491");
                 }},
-
-            );
-
-            setEnginesMirror(
-            new UnitEngine(7f, -12f, 3f, -70f)
             );
             
             weapons.add(
@@ -220,6 +212,10 @@ public class NagyUnitTypes {
                     lifetime = 60f;
                     }};
                 }}
+            );
+
+            setEnginesMirror(
+            new UnitEngine(7f, -12f, 3f, -70f)
             );
         }};
         
