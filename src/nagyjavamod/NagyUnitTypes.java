@@ -159,7 +159,7 @@ public class NagyUnitTypes {
             drag = 0.05f;
             hitSize = 20;
             engineSize = 6f;
-            engineOffset = 15f;
+            engineOffset = 13f;
             health = 4000;
             armor = 10;
             flying = false;
