@@ -152,7 +152,7 @@ public class NagyUnitTypes {
 
         inflamation = new UnitType("inflamation"){{
             constructor = UnitEntity::create;
-            speed = 4f;
+            speed = 6f;
             rotateSpeed = 10f;
             accel = 0.05f;
             drag = 0.1f;
@@ -189,8 +189,7 @@ public class NagyUnitTypes {
 
         forestfire = new UnitType("forestfire"){{
             constructor = UnitEntity::create;
-            speed = 3f;
-            rotateSpeed = 10f;
+            speed = 5f;
             accel = 0.05f;
             drag = 0.1f;
             engineSize = 1f;
