@@ -150,6 +150,52 @@ public class NagyUnitTypes {
             );
         }};
 
+        trooper = new UnitType("whosdeez"){{
+            constructor = ElevationMoveUnit::create;
+            hovering = true;
+            shadowElevation = -3f;
+            lowAltitude = true;
+            speed = 4f;
+            accel = 0.05f;
+            drag = 0.05f;
+            hitSize = 20;
+            engineSize = 4f;
+            engineOffset = 12f;
+            health = 4000;
+            armor = 10;
+            flying = false;
+            itemCapacity = 0;
+            useEngineElevation = false;
+            
+            parts.add(
+                new HoverPart(){{
+                    x = 30f;
+                    y = 11f;
+                    mirror = true;
+                    radius = 7f;
+                    phase = 90f;
+                    stroke = 2f;
+                    layerOffset = -0.001f;
+                    color = Color.valueOf("84f491");
+                }}
+            );
+    
+            weapons.add(
+                new Weapon(""){{
+                reload = 15f;
+                x = 0f;
+                y = 10f;
+                top = false;
+                inaccuracy = 0;
+                bullet = new RicochetBulletType(5f, 20f, "bullet"){{
+                    width = 9f;
+                    height = 12f;
+                    lifetime = 60f;
+                    }};
+                }}
+            );
+        }};
+        
         inflamation = new UnitType("inflamation"){{
             constructor = UnitEntity::create;
             speed = 6f;
