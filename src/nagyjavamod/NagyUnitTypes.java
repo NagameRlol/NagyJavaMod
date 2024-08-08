@@ -196,7 +196,7 @@ public class NagyUnitTypes {
                     stroke = 2f;
                     layerOffset = -0.001f;
                     color = Color.valueOf("84f491");
-                }},
+                }}
             );
             
             weapons.add(
