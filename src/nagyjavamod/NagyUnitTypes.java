@@ -161,8 +161,8 @@ public class NagyUnitTypes {
             accel = 0.05f;
             drag = 0.05f;
             hitSize = 20;
-            engineSize = 4f;
-            engineOffset = 12f;
+            engineSize = 6f;
+            engineOffset = 16f;
             health = 4000;
             armor = 10;
             flying = false;
@@ -200,18 +200,13 @@ public class NagyUnitTypes {
                     layerOffset = -0.001f;
                     color = Color.valueOf("84f491");
                 }},
-                new HoverPart(){{
-                    x = 8f;
-                    y = -11f;
-                    mirror = true;
-                    radius = 7f;
-                    phase = 90f;
-                    stroke = 2f;
-                    layerOffset = -0.001f;
-                    color = Color.valueOf("84f491");
-                }}
+
             );
-    
+
+            setEnginesMirror(
+            new UnitEngine(7f, -12f, 3f, -70f)
+            );
+            
             weapons.add(
                 new Weapon(""){{
                 reload = 15f;
