@@ -159,7 +159,7 @@ public class NagyUnitTypes {
             drag = 0.05f;
             hitSize = 20;
             engineSize = 6f;
-            engineOffset = 16f;
+            engineOffset = 15f;
             health = 4000;
             armor = 10;
             flying = false;
@@ -215,8 +215,9 @@ public class NagyUnitTypes {
             );
 
             setEnginesMirror(
-            new UnitEngine(7f, -12f, 3f, -70f)
+            new UnitEngine(8f, -13f, 4f, -70f)
             );
+            
         }};
         
         inflamation = new UnitType("inflamation"){{
