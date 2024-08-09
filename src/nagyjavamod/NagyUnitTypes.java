@@ -168,8 +168,9 @@ public class NagyUnitTypes {
             health = 4000;
             armor = 10;
             flying = false;
-            itemCapacity = 0;
+            itemCapacity = 60;
             useEngineElevation = false;
+            faceTarget = false;
             
             parts.add(
                 new HoverPart(){{
@@ -209,6 +210,7 @@ public class NagyUnitTypes {
                     shootSound = Sounds.lasershoot;
                     reload = 24f;
                     x = 10f;
+                    top = true;
                     y = 0f;
                     rotate = true;
                     bullet = new LaserBoltBulletType(5.2f, 10){{
@@ -224,6 +226,7 @@ public class NagyUnitTypes {
                     shootSound = Sounds.lasershoot;
                     reload = 24f;
                     x = 8f;
+                    top = true;
                     y = 7f;
                     rotate = true;
                     bullet = new LaserBoltBulletType(5.2f, 10){{
@@ -239,6 +242,7 @@ public class NagyUnitTypes {
                     reload = 24f;
                     x = 8f;
                     y = -7f;
+                    top = true;
                     rotate = true;
                     bullet = new LaserBoltBulletType(5.2f, 10){{
                         lifetime = 35f;
