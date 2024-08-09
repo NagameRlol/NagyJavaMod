@@ -171,6 +171,7 @@ public class NagyUnitTypes {
             itemCapacity = 60;
             useEngineElevation = false;
             faceTarget = false;
+            isEnemy = false;
             
             parts.add(
                 new HoverPart(){{
