@@ -206,7 +206,7 @@ public class NagyUnitTypes {
             );
             
             weapons.add(
-                new Weapon("heal-weapon-small"){{
+                new Weapon("nagyjavamod-heal-weapon-small"){{
                     shootSound = Sounds.lasershoot;
                     reload = 24f;
                     x = 10f;
@@ -222,7 +222,7 @@ public class NagyUnitTypes {
                     }};
                 }},
 
-                new Weapon("heal-weapon-small"){{
+                new Weapon("nagyjavamod-heal-weapon-small"){{
                     shootSound = Sounds.lasershoot;
                     reload = 24f;
                     x = 8f;
@@ -237,7 +237,7 @@ public class NagyUnitTypes {
                         frontColor = Color.white;
                     }};
                 }},
-                new Weapon("heal-weapon-small"){{
+                new Weapon("nagyjavamod-heal-weapon-small"){{
                     shootSound = Sounds.lasershoot;
                     reload = 24f;
                     x = 8f;
