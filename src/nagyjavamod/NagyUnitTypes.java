@@ -156,6 +156,7 @@ public class NagyUnitTypes {
             constructor = ElevationMoveUnit::create;
             hovering = true;
             lowAltitude = true;
+            defaultCommand = UnitCommand.repairCommand;
             rotateSpeed = 3f;
             speed = 2f;
             accel = 0.05f;
@@ -204,17 +205,47 @@ public class NagyUnitTypes {
             );
             
             weapons.add(
-                new Weapon(""){{
-                reload = 15f;
-                x = 0f;
-                y = 10f;
-                outlines = false;
-                top = false;
-                inaccuracy = 0;
-                bullet = new RicochetBulletType(5f, 20f, "bullet"){{
-                    width = 9f;
-                    height = 12f;
-                    lifetime = 60f;
+                new Weapon("heal-weapon-small"){{
+                    shootSound = Sounds.lasershoot;
+                    reload = 24f;
+                    x = 10f;
+                    y = 0f;
+                    rotate = true;
+                    bullet = new LaserBoltBulletType(5.2f, 10){{
+                        lifetime = 35f;
+                        healPercent = 5.5f;
+                        collidesTeam = true;
+                        backColor = Pal.heal;
+                        frontColor = Color.white;
+                    }};
+                }},
+
+                new Weapon("heal-weapon-small"){{
+                    shootSound = Sounds.lasershoot;
+                    reload = 24f;
+                    x = 8f;
+                    y = 7f;
+                    rotate = true;
+                    bullet = new LaserBoltBulletType(5.2f, 10){{
+                        lifetime = 35f;
+                        healPercent = 5.5f;
+                        collidesTeam = true;
+                        backColor = Pal.heal;
+                        frontColor = Color.white;
+                    }};
+                }},
+                new Weapon("heal-weapon-small"){{
+                    shootSound = Sounds.lasershoot;
+                    reload = 24f;
+                    x = 8f;
+                    y = -7f;
+                    rotate = true;
+                    bullet = new LaserBoltBulletType(5.2f, 10){{
+                        lifetime = 35f;
+                        healPercent = 5.5f;
+                        collidesTeam = true;
+                        backColor = Pal.heal;
+                        frontColor = Color.white;
                     }};
                 }}
             );
