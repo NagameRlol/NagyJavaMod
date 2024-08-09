@@ -43,6 +43,7 @@ public class NagyUnitTypes {
             lowAltitude = true;
             speed = 1.75f;
             accel = 0.09f;
+            outlines = false;
             drag = 0.07f;
             hitSize = 8;
             engineSize = 2.5f;
@@ -100,6 +101,7 @@ public class NagyUnitTypes {
             drag = 0.07f;
             hitSize = 11;
             engineSize = 3f;
+            outlines = false;
             engineOffset = 4f;
             health = 700;
             flying = false;
@@ -136,6 +138,7 @@ public class NagyUnitTypes {
                 x = 3f;
                 y = 5f;
                 top = true;
+                outlines = false;
                 rotate = true;
                 rotationLimit = 40;
                 inaccuracy = 0;
@@ -157,6 +160,7 @@ public class NagyUnitTypes {
             speed = 2f;
             accel = 0.05f;
             drag = 0.05f;
+            outlines = false;
             hitSize = 20;
             engineSize = 5f;
             engineOffset = 15f;
@@ -204,6 +208,7 @@ public class NagyUnitTypes {
                 reload = 15f;
                 x = 0f;
                 y = 10f;
+                outlines = false;
                 top = false;
                 inaccuracy = 0;
                 bullet = new RicochetBulletType(5f, 20f, "bullet"){{
@@ -227,6 +232,7 @@ public class NagyUnitTypes {
             accel = 0.05f;
             drag = 0.1f;
             engineSize = 3f;
+            outlines = false;
             engineOffset = 6f;
             health = 300;
             armor = 3f;
@@ -264,6 +270,7 @@ public class NagyUnitTypes {
             drag = 0.1f;
             engineSize = 1f;
             engineOffset = 0f;
+            outlines = false;
             health = 600;
             armor = 6f;
             flying = true;
