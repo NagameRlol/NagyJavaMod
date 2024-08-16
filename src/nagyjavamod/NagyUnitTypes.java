@@ -340,7 +340,7 @@ public class NagyUnitTypes {
         }};
 
         warning = new UnitType("warning"){{
-            constructor = UnitEntity::create;
+            constructor = MechUnit::create;
             flying = false;
             speed = 0.6f;
             hitSize = 8f;
