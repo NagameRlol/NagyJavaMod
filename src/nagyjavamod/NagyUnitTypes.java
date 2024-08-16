@@ -33,7 +33,8 @@ public class NagyUnitTypes {
     public static UnitType
     trooper, sergeant, //serpulo assault hovertanks
     whosdeez, //serpulo support hovertanks
-    inflamation, forestfire //red flying
+    inflamation, forestfire, //red flying
+    warning //red mech
     ; 
 
     public static void load(){
@@ -341,14 +342,16 @@ public class NagyUnitTypes {
         }};
 
         warning = new UnitType("warning"){{
+            constructor = UnitEntity::create;
+            flying = false;
             speed = 0.6f;
             hitSize = 8f;
             health = 400;
             armor = 5f;
             weapons.add(new Weapon("nagyjavamod-warning-weapon"){{
                 reload = 13f;
-                x = 4f;
-                y = 2f;
+                x = 5f;
+                y = -1f;
                 top = false;
                 ejectEffect = Fx.casing1;
                 bullet = new BasicBulletType(2.5f, 9){{
