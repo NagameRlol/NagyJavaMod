@@ -349,7 +349,7 @@ public class NagyUnitTypes {
             armor = 5f;
             weapons.add(new Weapon("nagyjavamod-warning-gun"){{
                 reload = 17f;
-                x = 5f;
+                x = 4.8f;
                 layerOffset = -0.001f;
                 y = 0f;
                 top = false;
@@ -357,7 +357,8 @@ public class NagyUnitTypes {
                 bullet = new BasicBulletType(3f, 15){{
                     width = 8f;
                     height = 12f;
-                    frontColor = NagyPal.redLaser;
+                    backColor = NagyPal.redLaser;
+                    frontColor = Color.valueOf("ffffff");
                     trailColor = NagyPal.redLaser;
                     lifetime = 50f;
                 }};
