@@ -276,7 +276,6 @@ public class NagyUnitTypes {
             flying = true;
             trailLength = 4;
             circleTarget = true;
-            outlineColor = NagyPal.basaltOutline;
             
             weapons.add(
                 new Weapon(""){{
@@ -312,7 +311,6 @@ public class NagyUnitTypes {
             armor = 6f;
             flying = true;
             circleTarget = true;
-            outlineColor = NagyPal.basaltOutline;
 
             setEnginesMirror(
             new UnitEngine(-4f, -7f, 2f, -90f)
@@ -347,6 +345,7 @@ public class NagyUnitTypes {
             speed = 0.6f;
             hitSize = 8f;
             health = 400;
+            outlines = false;
             armor = 5f;
             weapons.add(new Weapon("nagyjavamod-warning-weapon"){{
                 reload = 13f;
