@@ -355,12 +355,21 @@ public class NagyUnitTypes {
                 top = false;
                 ejectEffect = Fx.casing1;
                 bullet = new BasicBulletType(3f, 15){{
-                    width = 8f;
-                    height = 12f;
+                    width = 6f;
+                    height = 16f;
                     backColor = NagyPal.redLaser;
                     frontColor = Color.valueOf("ffffff");
                     trailColor = NagyPal.redLaser;
+                    trailLength = 2;
                     lifetime = 50f;
+                    fragBullets = 2;
+                    fragBullet = new BasicBulletType(5f, 5){{
+                        width = 4f;
+                        height = 6f;
+                        backColor = NagyPal.redLaser;
+                        frontColor = Color.valueOf("ffffff");
+                        lifetime = 40f;
+                    }};
                 }};
             }});
         }};
