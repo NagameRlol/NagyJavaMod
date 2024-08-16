@@ -339,6 +339,25 @@ public class NagyUnitTypes {
                 }}
             );
         }};
+
+        warning = new UnitType("warning"){{
+            speed = 0.6f;
+            hitSize = 8f;
+            health = 400;
+            armor = 5f;
+            weapons.add(new Weapon("nagyjavamod-warning-weapon"){{
+                reload = 13f;
+                x = 4f;
+                y = 2f;
+                top = false;
+                ejectEffect = Fx.casing1;
+                bullet = new BasicBulletType(2.5f, 9){{
+                    width = 7f;
+                    height = 9f;
+                    lifetime = 60f;
+                }};
+            }});
+        }};
         
     }
 }
