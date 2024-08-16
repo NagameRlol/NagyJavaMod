@@ -348,9 +348,9 @@ public class NagyUnitTypes {
             outlines = false;
             armor = 5f;
             weapons.add(new Weapon("nagyjavamod-warning-gun"){{
-                reload = 13f;
+                reload = 12f;
                 x = 6f;
-                y = -1f;
+                y = 0f;
                 top = false;
                 ejectEffect = Fx.casing1;
                 bullet = new BasicBulletType(2.5f, 9){{
