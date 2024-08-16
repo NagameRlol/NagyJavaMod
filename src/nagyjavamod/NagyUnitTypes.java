@@ -349,7 +349,7 @@ public class NagyUnitTypes {
             armor = 5f;
             weapons.add(new Weapon("nagyjavamod-warning-gun"){{
                 reload = 17f;
-                x = 4f;
+                x = 5f;
                 layerOffset = -0.001f;
                 y = 0f;
                 top = false;
