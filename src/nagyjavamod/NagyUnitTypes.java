@@ -34,7 +34,7 @@ public class NagyUnitTypes {
     trooper, sergeant, //serpulo assault hovertanks
     whosdeez, //serpulo support hovertanks
     inflamation, forestfire, //red flying
-    warning //red mech
+    warning, confrontation //red mech
     ; 
 
     public static void load(){
@@ -342,7 +342,7 @@ public class NagyUnitTypes {
         warning = new UnitType("warning"){{
             constructor = MechUnit::create;
             flying = false;
-            speed = 0.6f;
+            speed = 1f;
             hitSize = 8f;
             health = 400;
             outlines = false;
@@ -373,6 +373,42 @@ public class NagyUnitTypes {
                 }};
             }});
         }};
-        
+
+        confrontation = new UnitType("confrontation"){{
+            constructor = MechUnit::create;
+            flying = false;
+            speed = 0.8f;
+            hitSize = 14f;
+            health = 700;
+            outlines = false;
+            armor = 7f;
+            weapons.add(new Weapon("nagyjavamod-confrontation-gun"){{
+                reload = 13f;
+                x = 6f;
+                y = 0f;
+                top = false;               
+                layerOffset = -0.001f;
+                ejectEffect = Fx.casing1;
+                bullet = new BasicBulletType(3f, 12){{
+                    width = 8f;
+                    height = 18f;
+                    backColor = NagyPal.redLaser;
+                    frontColor = Color.valueOf("ffffff");
+                    trailColor = NagyPal.redLaser;
+                    trailLength = 4;
+                    weaveScl = 3f;
+                    weaveMag = 3f;
+                    lifetime = 50f;
+                    fragBullets = 10;
+                    fragBullet = new BasicBulletType(2f, 4){{
+                        width = 6f;
+                        height = 8f;
+                        backColor = NagyPal.redLaser;
+                        frontColor = Color.valueOf("ffffff");
+                        lifetime = 40f;
+                    }};
+                }};
+            }});
+        }};
     }
 }
