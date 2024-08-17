@@ -389,23 +389,21 @@ public class NagyUnitTypes {
                 top = false;               
                 layerOffset = -0.001f;
                 ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(3f, 12){{
+                bullet = new BasicBulletType(4f, 10){{
                     width = 8f;
                     height = 18f;
                     backColor = NagyPal.redLaser;
                     frontColor = Color.valueOf("ffffff");
                     trailColor = NagyPal.redLaser;
                     trailLength = 4;
-                    weaveScale = 1f;
-                    weaveMag = 1f;
                     lifetime = 50f;
-                    fragBullets = 10;
-                    fragBullet = new BasicBulletType(2f, 4){{
-                        width = 6f;
+                    fragBullets = 4;
+                    fragBullet = new BasicBulletType(3f, 4){{
+                        width = 4f;
                         height = 8f;
                         backColor = NagyPal.redLaser;
                         frontColor = Color.valueOf("ffffff");
-                        lifetime = 40f;
+                        lifetime = 50f;
                     }};
                 }};
             }});
