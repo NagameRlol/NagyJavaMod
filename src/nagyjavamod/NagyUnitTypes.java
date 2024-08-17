@@ -396,8 +396,8 @@ public class NagyUnitTypes {
                     frontColor = Color.valueOf("ffffff");
                     trailColor = NagyPal.redLaser;
                     trailLength = 4;
-                    weaveScl = 3f;
-                    weaveMag = 3f;
+                    weaveScale = 1f;
+                    weaveMag = 1f;
                     lifetime = 50f;
                     fragBullets = 10;
                     fragBullet = new BasicBulletType(2f, 4){{
