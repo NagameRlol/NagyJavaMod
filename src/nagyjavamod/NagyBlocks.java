@@ -65,7 +65,7 @@ public class NagyBlocks {
         }};
 
         coreOffice = new CoreBlock("core-office"){{
-            requirements(Category.effect, BuildVisibility.coreZoneOnly, with(Items.basalt, 900, Items.zinc, 700));
+            requirements(Category.effect, BuildVisibility.coreZoneOnly, with(NagyItems.basalt, 900, NagyItems.zinc, 700));
             alwaysUnlocked = true;
 
             isFirstTier = true;
