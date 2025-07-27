@@ -442,8 +442,8 @@ public class NagyUnitTypes {
                 targetBuildings = true;
                 autoTarget = false;
                 controllable = true;
-                laserColor = Pal.accent;
-                healColor = Pal.accent;
+                laserColor = Color.valueOf("ffffff");
+                healColor = Color.valueOf("84f491");
 
                 bullet = new BulletType(){{
                     maxRange = 60f;
