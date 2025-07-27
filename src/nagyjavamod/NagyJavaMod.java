@@ -12,7 +12,7 @@ import mindustry.ui.dialogs.*;
 public class NagyJavaMod extends Mod{
 
     public NagyJavaMod(){
-        Log.info("Loaded NagyJavaMod constructor.");
+        Log.info("loaded constructor.");
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
@@ -30,7 +30,7 @@ public class NagyJavaMod extends Mod{
 
     @Override
     public void loadContent(){
-        Log.info("Loading some example content.");
+        Log.info("loading mod contents");
         NagyItems.load();
         NagyUnitTypes.load();
         NagyBlocks.load();
