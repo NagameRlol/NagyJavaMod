@@ -422,7 +422,6 @@ public class NagyUnitTypes {
             engineOffset = 5f;
             range = 45f;
             isEnemy = false;
-            controlSelectGlobal = false;
 
             ammoType = new PowerAmmoType(500);
 
