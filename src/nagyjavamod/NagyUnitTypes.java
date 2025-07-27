@@ -424,10 +424,31 @@ public class NagyUnitTypes {
             range = 45f;
             isEnemy = false;
 
-            ammoType = new PowerAmmoType(500);
+             weapons.add(new RepairBeamWeapon(){{
+                widthSinMag = 0.11f;
+                reload = 50f;
+                x = 0f;
+                y = 6f;
+                rotate = false;
+                shootY = 0f;
+                beamWidth = 0.7f;
+                repairSpeed = 1f;
+                fractionRepairSpeed = 0.06f;
+                aimDst = 0f;
+                shootCone = 0f;
+                mirror = false;
 
-            mineTier = 2;
-            mineSpeed = 2f;
+                targetUnits = false;
+                targetBuildings = true;
+                autoTarget = false;
+                controllable = true;
+                laserColor = Pal.accent;
+                healColor = Pal.accent;
+
+                bullet = new BulletType(){{
+                    maxRange = 60f;
+                }};
+            }});
         }};
         
     }
