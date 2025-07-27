@@ -442,11 +442,11 @@ public class NagyUnitTypes {
                 targetBuildings = true;
                 autoTarget = true;
                 controllable = true;
-                laserColor = Color.valueOf("ffffff");
-                healColor = Color.valueOf("84f491");
+                laserColor = NagyPal.repairLaser;
+                healColor = NagyPal.repairLaser;
 
                 bullet = new BulletType(){{
-                    maxRange = 60f;
+                    maxRange = 50f;
                 }};
             }});
         }};
