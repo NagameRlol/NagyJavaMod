@@ -417,16 +417,16 @@ public class NagyUnitTypes {
             flying = true;
             drag = 0.07f;
             accel = 0.1f;
-            speed = 1.3f;
+            speed = 1.4f;
             health = 200;
-            engineSize = 1.3f;
-            engineOffset = 5f;
+            engineSize = 1.6f;
+            engineOffset = 4f;
             range = 45f;
             isEnemy = false;
 
             ammoType = new PowerAmmoType(500);
 
-            mineTier = 1;
+            mineTier = 2;
             mineSpeed = 2f;
         }};
         
