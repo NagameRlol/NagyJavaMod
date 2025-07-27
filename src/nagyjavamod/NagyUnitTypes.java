@@ -34,7 +34,8 @@ public class NagyUnitTypes {
     trooper, sergeant, //serpulo assault hovertanks
     whosdeez, //serpulo support hovertanks
     inflamation, forestfire, //red flying
-    warning, confrontation //red mech
+    warning, confrontation, //red mech
+    bit // serpulo miner
     ; 
 
     public static void load(){
@@ -408,5 +409,26 @@ public class NagyUnitTypes {
                 }};
             }});
         }};
+        
+        bit = new UnitType("bit"){{
+            defaultCommand = UnitCommand.mineCommand;
+
+            flying = true;
+            drag = 0.07f;
+            accel = 0.1f;
+            speed = 1.3f;
+            health = 200;
+            engineSize = 1.3f;
+            engineOffset = 5f;
+            range = 45f;
+            isEnemy = false;
+            controlSelectGlobal = false;
+
+            ammoType = new PowerAmmoType(500);
+
+            mineTier = 1;
+            mineSpeed = 2f;
+        }};
+        
     }
 }
