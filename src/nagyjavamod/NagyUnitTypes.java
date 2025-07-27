@@ -411,6 +411,7 @@ public class NagyUnitTypes {
         }};
         
         bit = new UnitType("bit"){{
+            constructor = FlyingUnit::create;
             defaultCommand = UnitCommand.mineCommand;
 
             flying = true;
