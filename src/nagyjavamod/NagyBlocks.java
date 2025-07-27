@@ -41,7 +41,11 @@ import static mindustry.Vars.*;
 import static mindustry.type.ItemStack.*;
 
 public class NagyBlocks {
-    public static Block electricExtractor;
+    public static Block 
+    // ConsumeGenerators
+    electricExtractor, 
+    // cores
+    coreOffice;
     
     public static void load(){
         
@@ -58,6 +62,20 @@ public class NagyBlocks {
             consumeItem(NagyItems.electricCyst, 1);
 
             drawer = new DrawMulti(new DrawDefault());
+        }};
+
+        coreOffice = new CoreBlock("core-office"){{
+            requirements(Category.effect, BuildVisibility.coreZoneOnly, with(Items.basalt, 900, Items.zinc, 700));
+            alwaysUnlocked = true;
+
+            isFirstTier = true;
+            unitType = UnitTypes.alpha;
+            health = 2400;
+            itemCapacity = 4000;
+            size = 3;
+            buildCostMultiplier = 2f;
+
+            unitCapModifier = 12;
         }};
         
     }
