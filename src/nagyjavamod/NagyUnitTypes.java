@@ -426,9 +426,9 @@ public class NagyUnitTypes {
 
              weapons.add(new RepairBeamWeapon(){{
                 widthSinMag = 0.11f;
-                reload = 50f;
+                reload = 10f;
                 x = 0f;
-                y = 6f;
+                y = 3f;
                 rotate = false;
                 shootY = 0f;
                 beamWidth = 0.7f;
@@ -440,7 +440,7 @@ public class NagyUnitTypes {
 
                 targetUnits = false;
                 targetBuildings = true;
-                autoTarget = false;
+                autoTarget = true;
                 controllable = true;
                 laserColor = Color.valueOf("ffffff");
                 healColor = Color.valueOf("84f491");
