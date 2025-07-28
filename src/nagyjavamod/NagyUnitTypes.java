@@ -416,7 +416,7 @@ public class NagyUnitTypes {
 
             flying = true;
             drag = 0.07f;
-            hitSize = 3f;
+            hitSize = 10f;
             accel = 0.1f;
             speed = 1.4f;
             health = 60;
@@ -433,22 +433,22 @@ public class NagyUnitTypes {
                 y = 3f;
                 rotate = false;
                 shootY = 0f;
-                beamWidth = 0.5f;
+                beamWidth = 0.4f;
                 repairSpeed = 1f;
                 fractionRepairSpeed = 0.06f;
-                aimDst = 10f;
-                shootCone = 10f;
+                aimDst = 1f;
+                shootCone = 1f;
                 mirror = false;
 
                 targetUnits = true;
                 targetBuildings = true;
-                autoTarget = false;
+                autoTarget = true;
                 controllable = true;
                 laserColor = NagyPal.repairLaser;
                 healColor = NagyPal.repairLaser;
 
                 bullet = new BulletType(){{
-                    maxRange = 30f;
+                    maxRange = 20f;
                 }};
             }});
         }};
