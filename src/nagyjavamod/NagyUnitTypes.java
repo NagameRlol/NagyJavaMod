@@ -419,6 +419,7 @@ public class NagyUnitTypes {
             accel = 0.1f;
             speed = 1.4f;
             health = 200;
+            outlines = false;
             engineSize = 1.6f;
             engineOffset = 4f;
             range = 45f;
