@@ -343,7 +343,7 @@ public class NagyUnitTypes {
         warning = new UnitType("warning"){{
             constructor = MechUnit::create;
             flying = false;
-            speed = 1f;
+            speed = 0.6f;
             hitSize = 8f;
             health = 400;
             outlines = false;
@@ -378,7 +378,7 @@ public class NagyUnitTypes {
         confrontation = new UnitType("confrontation"){{
             constructor = MechUnit::create;
             flying = false;
-            speed = 0.8f;
+            speed = 0.5f;
             hitSize = 14f;
             health = 700;
             outlines = false;
