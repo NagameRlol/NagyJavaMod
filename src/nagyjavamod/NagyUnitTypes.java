@@ -436,8 +436,8 @@ public class NagyUnitTypes {
                 beamWidth = 0.4f;
                 repairSpeed = 1f;
                 fractionRepairSpeed = 0.06f;
-                aimDst = 5f;
-                shootCone = 5f;
+                aimDst = 10f;
+                shootCone = 10f;
                 mirror = false;
 
                 targetUnits = true;
