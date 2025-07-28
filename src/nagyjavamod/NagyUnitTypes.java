@@ -436,13 +436,13 @@ public class NagyUnitTypes {
                 beamWidth = 0.7f;
                 repairSpeed = 1f;
                 fractionRepairSpeed = 0.06f;
-                aimDst = 0f;
-                shootCone = 0f;
+                aimDst = 10f;
+                shootCone = 10f;
                 mirror = false;
 
                 targetUnits = false;
                 targetBuildings = true;
-                autoTarget = true;
+                autoTarget = false;
                 controllable = true;
                 laserColor = NagyPal.repairLaser;
                 healColor = NagyPal.repairLaser;
