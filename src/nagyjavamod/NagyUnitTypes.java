@@ -416,7 +416,7 @@ public class NagyUnitTypes {
 
             flying = true;
             drag = 0.07f;
-            hitsize = 3f;
+            hitSize = 3f;
             accel = 0.1f;
             speed = 1.4f;
             health = 60;
