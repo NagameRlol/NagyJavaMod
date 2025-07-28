@@ -425,7 +425,7 @@ public class NagyUnitTypes {
             range = 45f;
             isEnemy = false;
 
-             weapons.add(new RepairBeamWeapon(){{
+            weapons.add(new RepairBeamWeapon(){{
                 widthSinMag = 0.11f;
                 reload = 10f;
                 x = 0f;
