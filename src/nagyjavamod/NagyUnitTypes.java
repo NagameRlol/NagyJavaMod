@@ -475,7 +475,7 @@ public class NagyUnitTypes {
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
-                shootSound = Sounds.swish;
+                shootSound = Sounds.shootBig;
                 bullet = new BasicBulletType(3f, 8f){{
                     width = 10f;
                     height = 10f;
