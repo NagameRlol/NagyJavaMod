@@ -471,16 +471,16 @@ public class NagyUnitTypes {
             weapons.add(
                 new Weapon(""){{
                 reload = 5f;
-                x = 1f;
-                y = 3f;
+                x = 2f;
+                y = 2f;
                 top = false;
                 alternate = true;
                 inaccuracy = 0;
                 shootSound = Sounds.noammo;
                 ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(3f, 2f){{
-                    width = 5f;
-                    height = 10f;
+                bullet = new BasicBulletType(10f, 2f){{
+                    width = 3f;
+                    height = 6f;
                     backColor = NagyPal.newRedLaser;
                     lifetime = 60f;
                     }};
