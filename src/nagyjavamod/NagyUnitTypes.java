@@ -469,12 +469,13 @@ public class NagyUnitTypes {
             circleTarget = false;
 
             parts.add(new ShapePart(){{
-                        progress = PartProgress.constant(0.1f);
+                        progress = PartProgress.constant(1f, 0f, 10f);
                         color = NagyPal.newRedLaser;
                         sides = 4;
                         radius = 10f;
                         rotateSpeed = 3f;
                         hollow = true;
+                        smoothProgress = 1f;
                         layer = 2;
                         y = 0f;
                     }});
