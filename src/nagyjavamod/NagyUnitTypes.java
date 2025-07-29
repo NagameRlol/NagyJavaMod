@@ -467,7 +467,7 @@ public class NagyUnitTypes {
             range = 30f;
             health = 200;
             flying = true;
-            circleTarget = true;
+            circleTarget = false;
             
             weapons.add(
                 new Weapon(""){{
