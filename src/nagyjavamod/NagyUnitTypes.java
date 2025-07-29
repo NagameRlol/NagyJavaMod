@@ -457,7 +457,8 @@ public class NagyUnitTypes {
         sparkle = new UnitType("sparkle"){{
             constructor = UnitEntity::create;
             speed = 2f;
-            rotateSpeed = 3f;
+            hitSize = 6f;
+            rotateSpeed = 10f;
             accel = 0.05f;
             drag = 0.05f;
             engineSize = 3f;
@@ -476,15 +477,14 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
-                bullet = new BasicBulletType(6f, 20f){{
+                bullet = new BasicBulletType(5f, 40f){{
                     width = 5f;
                     height = 10;
                     lifetime = 20f;
-                    frontColor = NagyPal.redLaser;
-                    trailColor = NagyPal.redLaser;
+                    frontColor = NagyPal.newRedLaser;
+                    trailColor = NagyPal.newRedLaser;
                     trailLength = 3;
                     trailWidth = 1;
-                    pierce = true;   
                     }};
                 }}
             );
