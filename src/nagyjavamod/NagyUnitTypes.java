@@ -476,7 +476,7 @@ public class NagyUnitTypes {
                         rotateSpeed = 3f;
                         hollow = true;
                         layer = 2;
-                        y = 0f;
+                        y = 2f;
                     }});
             
             weapons.add(
