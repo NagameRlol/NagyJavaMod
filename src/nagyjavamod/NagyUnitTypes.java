@@ -478,9 +478,9 @@ public class NagyUnitTypes {
                 inaccuracy = 0;
                 shootSound = Sounds.noammo;
                 ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(30f, 2f){{
-                    width = 1f;
-                    height = 3f;
+                bullet = new BasicBulletType(20f, 2f){{
+                    width = 2f;
+                    height = 5f;
                     backColor = NagyPal.newRedLaser;
                     lifetime = 60f;
                     }};
