@@ -33,7 +33,8 @@ public class NagyUnitTypes {
     public static UnitType
     trooper, sergeant, //serpulo assault hovertanks
     whosdeez, //serpulo support hovertanks
-    inflamation, forestfire, //red flying
+    inflamation, forestfire, //old red flying
+    sparkle, // new red flying
     warning, confrontation, //red mech
     bit // serpulo miner
     ; 
@@ -451,6 +452,43 @@ public class NagyUnitTypes {
                     maxRange = 30f;
                 }};
             }});
+        }};
+
+        sparkle = new UnitType("sparkle"){{
+            constructor = UnitEntity::create;
+            speed = 6f;
+            rotateSpeed = 10f;
+            accel = 0.05f;
+            drag = 0.1f;
+            engineSize = 3f;
+            outlines = false;
+            engineOffset = 6f;
+            health = 300;
+            armor = 3f;
+            flying = true;
+            trailLength = 4;
+            circleTarget = true;
+            
+            weapons.add(
+                new Weapon(""){{
+                reload = 10f;
+                x = 0f;
+                y = 3f;
+                top = false;
+                inaccuracy = 0;
+                shootSound = Sounds.bolt;
+                bullet = new BasicBulletType(6f, 20f, "laser"){{
+                    width = 1f;
+                    height = 20;
+                    lifetime = 40f;
+                    frontColor = NagyPal.redLaser;
+                    trailColor = NagyPal.redLaser;
+                    trailLength = 3;
+                    trailWidth = 1;
+                    pierce = true;   
+                    }};
+                }}
+            );
         }};
         
     }
