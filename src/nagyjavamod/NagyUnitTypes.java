@@ -474,7 +474,6 @@ public class NagyUnitTypes {
                         sides = 4;
                         radius = 10f;
                         rotateSpeed = 3f;
-                        smoothReload = 
                         hollow = true;
                         layer = 2;
                         y = 0f;
