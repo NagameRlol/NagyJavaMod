@@ -464,24 +464,23 @@ public class NagyUnitTypes {
             engineSize = 1f;
             outlines = false;
             engineOffset = 4f;
-            range = 30f;
             health = 200;
             flying = true;
             circleTarget = false;
             
             weapons.add(
                 new Weapon(""){{
-                reload = 10f;
+                reload = 30f;
                 x = 0f;
                 y = 3f;
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
                 bullet = new BasicBulletType(3f, 5f){{
-                    width = 5f;
-                    height = 10f;
+                    width = 10f;
+                    height = 20f;
                     shrinkX = 0.1f;
-                    lifetime = 20f;
+                    lifetime = 60f;
                     frontColor = NagyPal.newRedLaser;
                     trailColor = NagyPal.newRedLaser;
                     trailLength = 3;
