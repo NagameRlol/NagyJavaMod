@@ -475,7 +475,7 @@ public class NagyUnitTypes {
                         radius = 3f;
                         rotateSpeed = 3f;
                         hollow = true;
-                        layer = 1;
+                        layer = 2;
                         y = 0f;
                     }});
             
