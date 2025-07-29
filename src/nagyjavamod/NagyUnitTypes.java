@@ -476,9 +476,7 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.shootBig;
-                shootEffect = new Fx.colorSparkBig{
-                    color = NagyPal.newRedLaser;
-                };
+                shootEffect = Fx.colorSparkBig
                 bullet = new BasicBulletType(3f, 8f){{
                     width = 0.01f;
                     height = 0.01f;
