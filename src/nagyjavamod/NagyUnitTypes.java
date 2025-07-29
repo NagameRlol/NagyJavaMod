@@ -480,9 +480,9 @@ public class NagyUnitTypes {
                 bullet = new BasicBulletType(3f, 8f){{
                     width = 10f;
                     height = 10f;
-                    shrinkX = 1f;
+                    shrinkX = 0.5f;
                     lifetime = 60f;
-                    frontColor = Color.valueOf("ffffff");
+                    frontColor = NagyPal.newRedLaser;
                     backColor = NagyPal.newRedLaser;
                     }};
                 }}
