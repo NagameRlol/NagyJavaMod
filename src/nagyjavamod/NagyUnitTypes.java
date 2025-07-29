@@ -469,7 +469,7 @@ public class NagyUnitTypes {
             circleTarget = false;
 
             parts.add(new ShapePart(){{
-                        progress = PartProgress.smoothReload);
+                        progress = PartProgress.smoothReload;
                         color = NagyPal.newRedLaser;
                         sides = 4;
                         radius = 10f;
