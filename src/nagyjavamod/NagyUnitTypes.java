@@ -467,6 +467,17 @@ public class NagyUnitTypes {
             health = 200;
             flying = true;
             circleTarget = false;
+
+            parts.add(new ShapePart(){{
+                        progress = PartProgress.constant(1f);
+                        color = NagyPal.newRedLaser;
+                        sides = 6;
+                        radius = 3f;
+                        rotateSpeed = 3f;
+                        hollow = true;
+                        layer = 1;
+                        y = 0f;
+                    }});
             
             weapons.add(
                 new Weapon(""){{
@@ -480,7 +491,7 @@ public class NagyUnitTypes {
                 bullet = new BasicBulletType(3f, 8f){{
                     width = 10f;
                     height = 10f;
-                    shrinkX = 0.5f;
+                    shrinkX = 0.7f;
                     lifetime = 60f;
                     frontColor = NagyPal.newRedLaser;
                     backColor = NagyPal.newRedLaser;
