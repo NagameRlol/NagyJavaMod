@@ -461,9 +461,9 @@ public class NagyUnitTypes {
             rotateSpeed = 10f;
             accel = 0.05f;
             drag = 0.05f;
-            engineSize = 3f;
+            engineSize = 1f;
             outlines = false;
-            engineOffset = 6f;
+            engineOffset = 4f;
             range = 30f;
             health = 200;
             flying = true;
@@ -477,9 +477,10 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
-                bullet = new BasicBulletType(5f, 40f){{
+                bullet = new BasicBulletType(3f, 5f){{
                     width = 5f;
-                    height = 10;
+                    height = 10f;
+                    shrinkX = 0.1;
                     lifetime = 20f;
                     frontColor = NagyPal.newRedLaser;
                     trailColor = NagyPal.newRedLaser;
