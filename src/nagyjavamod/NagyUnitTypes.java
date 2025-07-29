@@ -480,7 +480,7 @@ public class NagyUnitTypes {
                 bullet = new BasicBulletType(3f, 5f){{
                     width = 5f;
                     height = 10f;
-                    shrinkX = 0.1;
+                    shrinkX = 0.1f;
                     lifetime = 20f;
                     frontColor = NagyPal.newRedLaser;
                     trailColor = NagyPal.newRedLaser;
