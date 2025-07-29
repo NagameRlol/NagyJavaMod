@@ -471,12 +471,12 @@ public class NagyUnitTypes {
             parts.add(new ShapePart(){{
                         progress = PartProgress.constant(1f);
                         color = NagyPal.newRedLaser;
-                        sides = 6;
-                        radius = 3f;
+                        sides = 5;
+                        radius = 10f;
                         rotateSpeed = 3f;
                         hollow = true;
                         layer = 2;
-                        y = 2f;
+                        y = 0f;
                     }});
             
             weapons.add(
