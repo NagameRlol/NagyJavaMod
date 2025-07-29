@@ -481,7 +481,7 @@ public class NagyUnitTypes {
                     height = 10f;
                     shrinkX = 0.1f;
                     lifetime = 60f;
-                    frontColor = valueOf("ffffff");
+                    frontColor = Color.valueOf("ffffff");
                     backColor = NagyPal.newRedLaser;
                     trailColor = NagyPal.newRedLaser;
                     trailLength = 9;
