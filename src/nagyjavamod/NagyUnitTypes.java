@@ -511,9 +511,6 @@ public class NagyUnitTypes {
                 top = false;
                 alternate = false;
                 inaccuracy = 30;
-                shoot = {
-                    shots = 3
-                }
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
                 bullet = new BombBulletType(15, 20f){{
