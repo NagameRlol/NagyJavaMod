@@ -7,5 +7,6 @@ public class NagyPal {
     public static Color
     basaltOutline = Color.valueOf("1d1d2b"),
     redLaser = Color.valueOf("ff7a70"),
+    newRedLaser = Color.valueOf("ff6578"),
     repairLaser = Color.valueOf("84f491");
 }
