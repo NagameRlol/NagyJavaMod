@@ -476,15 +476,16 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
-                bullet = new BasicBulletType(3f, 5f){{
+                bullet = new BasicBulletType(3f, 8f){{
                     width = 10f;
-                    height = 20f;
+                    height = 10f;
                     shrinkX = 0.1f;
                     lifetime = 60f;
-                    frontColor = NagyPal.newRedLaser;
+                    frontColor = valueOf("ffffff");
+                    backColor = NagyPal.newRedLaser;
                     trailColor = NagyPal.newRedLaser;
-                    trailLength = 3;
-                    trailWidth = 1;
+                    trailLength = 9;
+                    trailWidth = 4;
                     }};
                 }}
             );
