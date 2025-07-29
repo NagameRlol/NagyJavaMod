@@ -461,7 +461,7 @@ public class NagyUnitTypes {
             rotateSpeed = 10f;
             accel = 0.05f;
             drag = 0.05f;
-            engineSize = 1f;
+            engineSize = 2f;
             outlines = false;
             engineOffset = 4f;
             health = 200;
@@ -470,16 +470,18 @@ public class NagyUnitTypes {
             
             weapons.add(
                 new Weapon(""){{
-                reload = 30f;
-                x = 0f;
+                reload = 5f;
+                x = 1f;
                 y = 3f;
                 top = false;
+                alternate = true;
                 inaccuracy = 0;
-                shootSound = Sounds.shootBig;
+                shootSound = Sounds.noammo;
                 ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(3f, 8f){{
-                    width = 10f;
+                bullet = new BasicBulletType(3f, 2f){{
+                    width = 5f;
                     height = 10f;
+                    backColor = NagyPal.newRedLaser;
                     lifetime = 60f;
                     }};
                 }}
