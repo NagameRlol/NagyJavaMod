@@ -456,17 +456,16 @@ public class NagyUnitTypes {
 
         sparkle = new UnitType("sparkle"){{
             constructor = UnitEntity::create;
-            speed = 6f;
-            rotateSpeed = 10f;
+            speed = 2f;
+            rotateSpeed = 3f;
             accel = 0.05f;
-            drag = 0.1f;
+            drag = 0.05f;
             engineSize = 3f;
             outlines = false;
             engineOffset = 6f;
-            health = 300;
-            armor = 3f;
+            range = 30f;
+            health = 200;
             flying = true;
-            trailLength = 4;
             circleTarget = true;
             
             weapons.add(
@@ -477,10 +476,10 @@ public class NagyUnitTypes {
                 top = false;
                 inaccuracy = 0;
                 shootSound = Sounds.bolt;
-                bullet = new BasicBulletType(6f, 20f, "laser"){{
-                    width = 1f;
-                    height = 20;
-                    lifetime = 40f;
+                bullet = new BasicBulletType(6f, 20f){{
+                    width = 5f;
+                    height = 10;
+                    lifetime = 20f;
                     frontColor = NagyPal.redLaser;
                     trailColor = NagyPal.redLaser;
                     trailLength = 3;
