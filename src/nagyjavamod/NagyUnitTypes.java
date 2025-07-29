@@ -484,10 +484,10 @@ public class NagyUnitTypes {
                     parts.add(new ShapePart(){{
                         progress = PartProgress.constant(1f);
                         color = NagyPal.newRedLaser;
-                        sides = 4;
-                        radius = 4f;
-                        rotateSpeed = 6f;
-                        hollow = true;
+                        sides = 3;
+                        radius = 3f;
+                        rotateSpeed = 10f;
+                        hollow = false;
                         layer = this.layer;
                         y = 0f;
                     }});
