@@ -477,19 +477,16 @@ public class NagyUnitTypes {
                 inaccuracy = 0;
                 shootSound = Sounds.shootBig;
                 ejectEffect = Fx.colorSpark;
-                bullet = new BasicBulletType(3f, 8f){{
+                bullet = new BasicBulletType(3f, 8f, null){{
                     width = 10f;
                     height = 10f;
-                    shrinkX = 0.7f;
                     lifetime = 60f;
-                    frontColor = NagyPal.newRedLaser;
-                    backColor = NagyPal.newRedLaser;
                     parts.add(new ShapePart(){{
                         progress = PartProgress.constant(1f);
                         color = NagyPal.newRedLaser;
                         sides = 4;
                         radius = 4f;
-                        rotateSpeed = 3f;
+                        rotateSpeed = 6f;
                         hollow = true;
                         layer = this.layer;
                         y = 0f;
