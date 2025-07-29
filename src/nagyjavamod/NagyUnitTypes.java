@@ -34,7 +34,7 @@ public class NagyUnitTypes {
     trooper, sergeant, //serpulo assault hovertanks
     whosdeez, //serpulo support hovertanks
     inflamation, forestfire, //old red flying
-    sparkle, // new red flying
+    sparkle, shimmer, // new red flying
     warning, confrontation, //red mech
     bit // serpulo miner
     ; 
@@ -511,7 +511,9 @@ public class NagyUnitTypes {
                 top = false;
                 alternate = false;
                 inaccuracy = 30;
-                shots = 3;
+                shoot = {
+                    shots = 3
+                }
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
                 bullet = new BombBulletType(15, 20f){{
