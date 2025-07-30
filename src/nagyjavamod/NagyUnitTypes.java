@@ -520,7 +520,7 @@ public class NagyUnitTypes {
                 shootCone = 180f;
                 shake = 1f;
                     
-                bullet = new BombBulletType(20, 50, "large-bomb"){{
+                bullet = new BombBulletType(20, 20, "large-bomb"){{
                     width = 20f;
                     height = 20f;
                     hitEffect = Fx.flakExplosion;
