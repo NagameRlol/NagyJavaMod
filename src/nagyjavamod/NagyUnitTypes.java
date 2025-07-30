@@ -522,11 +522,12 @@ public class NagyUnitTypes {
                     
                 bullet = new BombBulletType(20, 50, "large-bomb"){{
                     width = 20f;
-                    height = 30f;
+                    height = 20f;
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
-                    shrinkY = 0f;
+                    shrinkY = 0.3f;
+                    shrinkX = 0.3f;
                     lifetime = 70f;
                     backColor = NagyPal.newRedLaser;
 
