@@ -504,7 +504,6 @@ public class NagyUnitTypes {
             circleTarget = true;
             targetAir = false;
             faceTarget = false;
-            autoDropBombs = true;
             
             weapons.add(
                 new Weapon(""){{
@@ -516,6 +515,7 @@ public class NagyUnitTypes {
                 inaccuracy = 30;
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
+                shootCone = 180f
                 bullet = new BombBulletType(27f, 30f){{
                     width = 10f;
                     height = 14f;
