@@ -507,7 +507,7 @@ public class NagyUnitTypes {
             
             weapons.add(
                 new Weapon(""){{
-                minShootVelocity = 0.75f
+                minShootVelocity = 0.75f;
                 reload = 40f;
                 x = 0f;
                 y = -3f;
@@ -516,7 +516,8 @@ public class NagyUnitTypes {
                 inaccuracy = 30f;
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
-                shootCone = 180f
+                shootCone = 180f;
+                    
                 bullet = new BombBulletType(27f, 30f){{
                     width = 10f;
                     height = 14f;
