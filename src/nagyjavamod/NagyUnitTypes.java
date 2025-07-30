@@ -521,9 +521,9 @@ public class NagyUnitTypes {
                 shootCone = 180f;
                 shake = 1f;
                     
-                bullet = new BombBulletType(30, 40){{
-                    width = 20f;
-                    height = 30f;
+                bullet = new BombBulletType(20, 50, "large-bomb"){{
+                    width = 10f;
+                    height = 10f;
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
