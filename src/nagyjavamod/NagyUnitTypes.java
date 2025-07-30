@@ -526,7 +526,7 @@ public class NagyUnitTypes {
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
-                    lifetime = 70f
+                    lifetime = 70f;
 
                     status = StatusEffects.blasted;
                     statusDuration = 80f;
