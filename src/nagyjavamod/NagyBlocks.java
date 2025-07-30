@@ -80,8 +80,6 @@ public class NagyBlocks {
             unitCapModifier = 12;
         }};
 
-        blueWall = new StaticWall("blue-wall"){{
-            attributes.set(Attribute.sand, 1f);
-        }};
+        blueWall = new StaticWall("blue-wall");
     }
 }
