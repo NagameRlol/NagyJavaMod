@@ -45,7 +45,9 @@ public class NagyBlocks {
     // ConsumeGenerators
     electricExtractor, 
     // cores
-    coreOffice;
+    coreOffice,
+    // terrain
+    blueWall;
     
     public static void load(){
         
@@ -77,6 +79,9 @@ public class NagyBlocks {
 
             unitCapModifier = 12;
         }};
-        
+
+        blueWall = new StaticWall("blue-wall"){{
+            attributes.set(Attribute.sand, 1f);
+        }};
     }
 }
