@@ -508,7 +508,6 @@ public class NagyUnitTypes {
             
             weapons.add(
                 new Weapon(""){{
-                minShootVelocity = 0.75f;
                 reload = 40f;
                 x = 0f;
                 y = -3f;
@@ -522,12 +521,13 @@ public class NagyUnitTypes {
                 shake = 1f;
                     
                 bullet = new BombBulletType(20, 50, "large-bomb"){{
-                    width = 10f;
-                    height = 10f;
+                    width = 20f;
+                    height = 30f;
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
                     lifetime = 70f;
+                    backColor = NagyPal.newRedLaser
 
                     status = StatusEffects.blasted;
                     statusDuration = 80f;
