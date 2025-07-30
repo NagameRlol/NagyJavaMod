@@ -519,6 +519,7 @@ public class NagyUnitTypes {
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
                 shootCone = 180f;
+                shake = 1f;
                     
                 bullet = new BombBulletType(30, 40){{
                     width = 20f;
