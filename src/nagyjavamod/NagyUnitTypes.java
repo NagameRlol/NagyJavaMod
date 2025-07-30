@@ -476,9 +476,9 @@ public class NagyUnitTypes {
                 top = false;
                 alternate = false;
                 inaccuracy = 0;
-                shootSound = Sounds.noammo;
-                ejectEffect = Fx.casing1;
-                bullet = new BasicBulletType(15f, 4f){{
+                shootSound = Sounds.shootAlt;
+                ejectEffect = Fx.casing2;
+                bullet = new BasicBulletType(5f, 6f){{
                     width = 5f;
                     height = 10f;
                     frontColor = Color.white;
