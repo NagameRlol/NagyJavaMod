@@ -456,10 +456,10 @@ public class NagyUnitTypes {
 
         sparkle = new UnitType("sparkle"){{
             constructor = UnitEntity::create;
-            speed = 3f;
+            speed = 4f;
             hitSize = 6f;
             rotateSpeed = 10f;
-            accel = 0.05f;
+            accel = 0.3f;
             drag = 0.05f;
             engineSize = 2f;
             outlines = false;
@@ -479,7 +479,7 @@ public class NagyUnitTypes {
                 inaccuracy = 0;
                 shootSound = Sounds.shootAlt;
                 ejectEffect = Fx.casing2;
-                bullet = new BasicBulletType(5f, 6f){{
+                bullet = new BasicBulletType(5f, 6){{
                     width = 5f;
                     height = 10f;
                     frontColor = Color.white;
@@ -492,14 +492,14 @@ public class NagyUnitTypes {
 
         shimmer = new UnitType("shimmer"){{
             constructor = UnitEntity::create;
-            speed = 2f;
+            speed = 3f;
             hitSize = 12f;
             rotateSpeed = 3;
-            accel = 0.05f;
+            accel = 0.2f;
             drag = 0.08f;
-            engineSize = 2f;
+            engineSize = 4f;
             outlines = false;
-            engineOffset = 4f;
+            engineOffset = 7f;
             health = 400;
             flying = true;
             circleTarget = true;
@@ -520,12 +520,13 @@ public class NagyUnitTypes {
                 ejectEffect = Fx.none;
                 shootCone = 180f;
                     
-                bullet = new BombBulletType(27f, 30f){{
-                    width = 10f;
-                    height = 14f;
+                bullet = new BombBulletType(30, 40){{
+                    width = 20f;
+                    height = 30f;
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
+                    lifetime = 70f
 
                     status = StatusEffects.blasted;
                     statusDuration = 80f;
