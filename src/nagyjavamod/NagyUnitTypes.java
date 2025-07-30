@@ -456,10 +456,10 @@ public class NagyUnitTypes {
 
         sparkle = new UnitType("sparkle"){{
             constructor = UnitEntity::create;
-            speed = 4f;
+            speed = 2.5f;
             hitSize = 6f;
             rotateSpeed = 10f;
-            accel = 0.3f;
+            accel = 0.05f;
             drag = 0.05f;
             engineSize = 2f;
             outlines = false;
@@ -492,10 +492,10 @@ public class NagyUnitTypes {
 
         shimmer = new UnitType("shimmer"){{
             constructor = UnitEntity::create;
-            speed = 3f;
+            speed = 2f;
             hitSize = 12f;
             rotateSpeed = 3;
-            accel = 0.2f;
+            accel = 0.05f;
             drag = 0.08f;
             engineSize = 4f;
             outlines = false;
