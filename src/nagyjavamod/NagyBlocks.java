@@ -47,7 +47,7 @@ public class NagyBlocks {
     // cores
     coreOffice,
     // terrain
-    blueWall;
+    blueWall, volcanicFloor;
     
     public static void load(){
         
@@ -81,5 +81,7 @@ public class NagyBlocks {
         }};
 
         blueWall = new StaticWall("blue-wall");
+
+        volcanicFloor = new Floor("volcanic-floor");
     }
 }
