@@ -516,7 +516,7 @@ public class NagyUnitTypes {
                 inaccuracy = 30;
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
-                bullet = new BombBulletType(15, 20f){{
+                bullet = new BombBulletType(27f, 30f){{
                     width = 10f;
                     height = 14f;
                     hitEffect = Fx.flakExplosion;
