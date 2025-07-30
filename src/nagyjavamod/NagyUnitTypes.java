@@ -526,8 +526,9 @@ public class NagyUnitTypes {
                     hitEffect = Fx.flakExplosion;
                     shootEffect = Fx.none;
                     smokeEffect = Fx.none;
+                    shrinkY = 0f;
                     lifetime = 70f;
-                    backColor = NagyPal.newRedLaser
+                    backColor = NagyPal.newRedLaser;
 
                     status = StatusEffects.blasted;
                     statusDuration = 80f;
