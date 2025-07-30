@@ -474,6 +474,7 @@ public class NagyUnitTypes {
                 x = 0f;
                 y = 3f;
                 top = false;
+                mirror = false;
                 alternate = false;
                 inaccuracy = 0;
                 shootSound = Sounds.shootAlt;
@@ -513,6 +514,7 @@ public class NagyUnitTypes {
                 y = -3f;
                 top = false;
                 alternate = false;
+                mirror = false;
                 inaccuracy = 30f;
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
