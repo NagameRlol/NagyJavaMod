@@ -507,12 +507,13 @@ public class NagyUnitTypes {
             
             weapons.add(
                 new Weapon(""){{
+                minShootVelocity = 0.75f
                 reload = 40f;
                 x = 0f;
                 y = -3f;
                 top = false;
                 alternate = false;
-                inaccuracy = 30;
+                inaccuracy = 30f;
                 shootSound = Sounds.none;
                 ejectEffect = Fx.none;
                 shootCone = 180f
