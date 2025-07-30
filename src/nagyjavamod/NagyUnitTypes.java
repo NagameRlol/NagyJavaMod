@@ -493,15 +493,18 @@ public class NagyUnitTypes {
             constructor = UnitEntity::create;
             speed = 2f;
             hitSize = 12f;
-            rotateSpeed = 10f;
+            rotateSpeed = 3;
             accel = 0.05f;
-            drag = 0.05f;
+            drag = 0.08f;
             engineSize = 2f;
             outlines = false;
             engineOffset = 4f;
             health = 400;
             flying = true;
             circleTarget = true;
+            targetAir = false;
+            faceTarget = false;
+            autoDropBombs = true;
             
             weapons.add(
                 new Weapon(""){{
