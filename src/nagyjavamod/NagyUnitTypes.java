@@ -563,7 +563,7 @@ public class NagyUnitTypes {
                 alternate = true;
                 inaccuracy = 0;
                 shootSound = Sounds.shootAlt;
-                bullet = new MissileBulletType(1f, 6f){{
+                bullet = new MissileBulletType(1f, 16f){{
                     width = 5f;
                     height = 10f;
                     frontColor = Color.white;
