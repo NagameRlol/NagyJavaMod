@@ -35,7 +35,7 @@ public class NagyUnitTypes {
     whosdeez, //serpulo support hovertanks
     inflamation, forestfire, //old red flying
     sparkle, shimmer, // new red flying
-    warning, confrontation, //red mech
+    warning, confrontation, bioluminescence, //red mech
     bit // serpulo miner
     ; 
 
@@ -494,7 +494,7 @@ public class NagyUnitTypes {
             constructor = UnitEntity::create;
             speed = 2f;
             hitSize = 12f;
-            rotateSpeed = 3;
+            rotateSpeed = 3f;
             accel = 0.05f;
             drag = 0.08f;
             engineSize = 4f;
@@ -534,6 +534,42 @@ public class NagyUnitTypes {
                     status = StatusEffects.blasted;
                     statusDuration = 80f;
                     damage = splashDamage * 0.5f;
+                    }};
+                }}
+            );
+        }};
+        
+        bioluminescence = new UnitType("bioluminescence"){{
+            constructor = UnitEntity::create;
+            speed = 2.8f;
+            hitSize = 12f;
+            rotateSpeed = 5f;
+            accel = 0.05f;
+            drag = 0.05f;
+            engineSize = 3f;
+            outlines = false;
+            engineOffset = 6f;
+            health = 900;
+            flying = true;
+            circleTarget = false;
+            
+            weapons.add(
+                new Weapon("bioluminescence-gun"){{
+                reload = 7f;
+                x = 5f;
+                y = -2f;
+                top = false;
+                mirror = false;
+                alternate = false;
+                inaccuracy = 0;
+                shootSound = Sounds.shootAlt;
+                ejectEffect = Fx.casing2;
+                bullet = new MissileBulletType(5f, 6){{
+                    width = 5f;
+                    height = 10f;
+                    frontColor = Color.white;
+                    backColor = NagyPal.newRedLaser;
+                    lifetime = 60f;
                     }};
                 }}
             );
