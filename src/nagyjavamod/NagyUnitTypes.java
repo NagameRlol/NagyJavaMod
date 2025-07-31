@@ -554,7 +554,7 @@ public class NagyUnitTypes {
             circleTarget = false;
             
             weapons.add(
-                new Weapon("bioluminescence-gun"){{
+                new Weapon("gun"){{
                 reload = 20f;
                 x = 5f;
                 y = -2f;
@@ -562,8 +562,7 @@ public class NagyUnitTypes {
                 mirror = true;
                 alternate = true;
                 inaccuracy = 0;
-                shootSound = Sounds.shootAlt;
-                bullet = new MissileBulletType(1f, 16f){{
+                bullet = new MissileBulletType(3f, 16f){{
                     width = 5f;
                     height = 10f;
                     frontColor = Color.white;
