@@ -555,21 +555,20 @@ public class NagyUnitTypes {
             
             weapons.add(
                 new Weapon("bioluminescence-gun"){{
-                reload = 7f;
+                reload = 20f;
                 x = 5f;
                 y = -2f;
-                top = false;
-                mirror = false;
-                alternate = false;
+                top = true;
+                mirror = true;
+                alternate = true;
                 inaccuracy = 0;
                 shootSound = Sounds.shootAlt;
-                ejectEffect = Fx.casing2;
-                bullet = new MissileBulletType(5f, 6){{
+                bullet = new MissileBulletType(1f, 6f){{
                     width = 5f;
                     height = 10f;
                     frontColor = Color.white;
                     backColor = NagyPal.newRedLaser;
-                    lifetime = 60f;
+                    lifetime = 80f;
                     }};
                 }}
             );
